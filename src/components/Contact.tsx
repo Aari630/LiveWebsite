@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { MapPin, Phone, Mail, Send, Clock, Facebook, Instagram } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { Mail, Phone, MapPin, Send, Clock, Facebook, Instagram } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -89,7 +89,7 @@ export default function Contact() {
           }`}>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
-              
+
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start space-x-4">
@@ -146,7 +146,7 @@ export default function Contact() {
           }`}>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
-              
+
               <form
   action="https://formspree.io/f/movwbjpq"
   method="POST"
@@ -213,7 +213,7 @@ export default function Contact() {
         <div className={`mt-16 transition-all duration-1000 delay-700 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
         }`}>
-          
+
         </div>
       </div>
     </section>

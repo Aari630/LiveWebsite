@@ -42,7 +42,7 @@ export default function Footer() {
               Based in Kanpur, India, we fuse tradition with quality to create durable, 
               stylish, and high-performance equestrian products.
             </p>
-            
+
             {/* Social Media */}
             <div className="flex space-x-4">
               <a 
@@ -93,7 +93,7 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-amber-600 flex-shrink-0" />
                 <a 
@@ -103,7 +103,7 @@ export default function Footer() {
                   +91 7880722916
                 </a>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-600 flex-shrink-0" />
                 <a 
@@ -124,13 +124,34 @@ export default function Footer() {
               {t('copyright')}
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-amber-600 transition-colors duration-300">
+              <a 
+                href="/privacy-policy" 
+                className="hover:text-amber-600 transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/privacy-policy';
+                }}
+              >
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-amber-600 transition-colors duration-300">
+              <a 
+                href="/terms-of-service" 
+                className="hover:text-amber-600 transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/terms-of-service';
+                }}
+              >
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-amber-600 transition-colors duration-300">
+              <a 
+                href="/warranty" 
+                className="hover:text-amber-600 transition-colors duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.href = '/warranty';
+                }}
+              >
                 Warranty
               </a>
             </div>

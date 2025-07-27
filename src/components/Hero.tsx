@@ -85,7 +85,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Hero Image */}
           <div className={`relative transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
             }`}>
             <div className="relative">
@@ -96,13 +95,6 @@ export default function Hero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
 
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4   p-4 shadow-lg">
-
-              </div>
-              <div className="absolute -bottom-4 -left-4  p-4 shadow-lg">
-
-              </div>
             </div>
           </div>
         </div>

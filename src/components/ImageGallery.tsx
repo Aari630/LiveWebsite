@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import HighQualityImage from './HighQualityImage';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
 interface ImageGalleryProps {
@@ -123,15 +122,12 @@ export default function ImageGallery({
             style={{ transitionDelay: `${index * 100}ms` }}
             onClick={() => setSelectedImage(index)}
           >
-            {loadedImages.has(index) && (
-              <HighQualityImage
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-contain bg-gray-100 group-hover:scale-110 transition-transform duration-700"
-                loading="lazy"
-                fallbackSrc="/saddle.jpg"
-              />
-            )}
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-contain bg-gray-100 group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
+            />
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -157,12 +153,11 @@ export default function ImageGallery({
       {selectedImage !== null && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
           <div className="relative max-w-5xl max-h-full">
-            <HighQualityImage
+            <img
               src={images[selectedImage].src}
               alt={images[selectedImage].alt}
               className="max-w-full max-h-full object-contain bg-gray-100"
               loading="eager"
-              fallbackSrc="/saddle.jpg"
             />
 
             {/* Close Button */}
