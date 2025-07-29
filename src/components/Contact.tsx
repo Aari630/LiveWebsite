@@ -117,7 +117,7 @@ export default function Contact() {
 
               {/* Social Media */}
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-4">{t('followUs')}</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">{t('Follow Us')}</h4>
                 <div className="flex space-x-4">
                   <a 
                     href="https://www.facebook.com/Saddlefusion"
@@ -155,7 +155,7 @@ export default function Contact() {
   <div className="grid md:grid-cols-2 gap-6">
     <div>
       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-        {t('contactName')} *
+        {t('Contact Name')} *
       </label>
       <input
         type="text"
@@ -169,7 +169,7 @@ export default function Contact() {
 
     <div>
       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-        {t('contactEmail')} *
+        {t('Contact Email')} *
       </label>
       <input
         type="email"
@@ -184,7 +184,7 @@ export default function Contact() {
 
   <div>
     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-      {t('contactMessage')} *
+      {t('Contact Message')} *
     </label>
     <textarea
       id="message"
@@ -201,7 +201,7 @@ export default function Contact() {
     className="w-full bg-amber-600 hover:bg-amber-700 text-white py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
   >
     <Send className="h-5 w-5" />
-    <span>{t('sendMessage')}</span>
+    <span>{t('Send Message')}</span>
   </button>
 </form>
 
