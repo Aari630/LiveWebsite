@@ -47,19 +47,19 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: MapPin,
-      title: t('address'),
+      title: t('Address'),
       content: '12/4, Juhi Safed Colony,\nKanpur – 208014',
       link: 'https://maps.google.com'
     },
     {
       icon: Phone,
-      title: t('phone'),
+      title: t('Phone'),
       content: '+91 7880722916',
       link: 'tel:+917880722916'
     },
     {
       icon: Mail,
-      title: t('email'),
+      title: t('Email'),
       content: 'Asifinternational225@gmail.com',
       link: 'mailto:Asifinternational225@gmail.com'
     }
