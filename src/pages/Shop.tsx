@@ -133,21 +133,6 @@ export default function ShopPage() {
                           </div>
                         </div>
                       )} 
-
-                  {/* Enhanced hover overlay with full description */}
-                  <div className="absolute -top-2 left-0 right-0 bg-white p-6 rounded-xl shadow-2xl border-2 border-amber-100 z-50 opacity-0 invisible group-hover/description:opacity-100 group-hover/description:visible transition-all duration-300 transform translate-y-4 group-hover/description:translate-y-0 scale-95 group-hover/description:scale-100">
-                    <div className="max-h-32 overflow-y-auto">
-                      <p className="text-gray-800 text-sm leading-relaxed font-medium">
-                        {product.description}
-                      </p>
-                    </div>
-                    
-                    {/* Enhanced arrow pointer */}
-                    <div className="absolute -bottom-3 left-6 w-6 h-6 bg-white border-r-2 border-b-2 border-amber-100 transform rotate-45"></div>
-                    
-                    {/* Subtle gradient background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 to-white rounded-xl -z-10"></div>
-                  </div>
                 </div>
               </div>
           ))}
