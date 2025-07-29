@@ -103,14 +103,20 @@ export default function ShopPage() {
               </div>
 
               {/* Product Info */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
-                  {product.name}
-                </h3>
-                <div className="relative group/description">
-                  <p className="text-gray-600 mb-4 text-sm line-clamp-2 cursor-pointer hover:text-amber-600 transition-colors duration-200">
-                    {product.description}
-                  </p>
+<div className="p-6 group relative">
+  <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+    {product.name}
+  </h3>
+
+  {/* Expandable Description */}
+  <div className="relative">
+    <p
+      className="text-gray-600 text-sm transition-all duration-300 ease-in-out max-h-[3.6em] overflow-hidden cursor-pointer group-hover:max-h-[500px] hover:text-amber-600"
+    >
+      {product.description}
+    </p>
+  </div>
+</div>
                   
                   {/* Enhanced hover overlay with full description */}
                   <div className="absolute -top-2 left-0 right-0 bg-white p-6 rounded-xl shadow-2xl border-2 border-amber-100 z-50 opacity-0 invisible group-hover/description:opacity-100 group-hover/description:visible transition-all duration-300 transform translate-y-4 group-hover/description:translate-y-0 scale-95 group-hover/description:scale-100">
