@@ -102,21 +102,11 @@ export default function ShopPage() {
                 </div>
               </div>
 
-                       {/* Product Info */}
-                      <div className="p-6 group">
-                        <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
-                          {product.name}
-                        </h3>
-
-                        {/* Description with expandable logic */}
-                        <div className="relative group/description">
-                          <p
-                            className="text-gray-600 mb-4 text-sm line-clamp-2 group-hover/description:line-clamp-none transition-all duration-300 ease-in-out cursor-pointer hover:text-amber-600"
-                          >
-                            {product.description}
-                          </p>
-                        </div>
-
+               {/* Product Info */}
+                <div className="p-6 group">
+                  <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                    {product.name}
+                      </h3>
                         {/* Amazon Button */}
                         {product.amazonLink && (
                         <div className="flex items-center justify-between mt-4">
