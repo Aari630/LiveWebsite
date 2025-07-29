@@ -11,10 +11,8 @@ export const shopProducts: Product[] = [
   // Western Saddles (10 products)
   {
     id: 1,
-    name: "Premium Western Trail Saddle",
+    name: "Western Horse Saddle for Sale Hand-Tooled Show Saddle with Silver Accents – Premium Leather Horse Tack and Colors Available",
     image: "w1.webp",
-    description:
-      "Western Horse Saddle for Sale Hand-Tooled Show Saddle with Silver Accents – Premium Leather Horse Tack and Colors Available",
     category: "Western Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Saddle-Hand-Tooled-Silver-Accents/dp/B0FG1WHN79?ref_=ast_sto_dp&th=1&psc=1",
