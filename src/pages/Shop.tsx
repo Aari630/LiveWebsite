@@ -102,22 +102,36 @@ export default function ShopPage() {
                 </div>
               </div>
 
-              {/* Product Info */}
-<div className="p-6 group relative">
-  <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
-    {product.name}
-  </h3>
+                        {/* Product Info */}
+                        <div className="p-6 group">
+                          <h3 className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                            {product.name}
+                          </h3>
 
-  {/* Expandable Description */}
-  <div className="relative">
-    <p
-      className="text-gray-600 text-sm transition-all duration-300 ease-in-out max-h-[3.6em] overflow-hidden cursor-pointer group-hover:max-h-[500px] hover:text-amber-600"
-    >
-      {product.description}
-    </p>
-  </div>
-</div>
-                  
+                          {/* Description with expandable logic */}
+                          <div className="relative group/description">
+                            <p
+                              className="text-gray-600 mb-4 text-sm line-clamp-2 group-hover/description:line-clamp-none transition-all duration-300 ease-in-out cursor-pointer hover:text-amber-600"
+                            >
+                              {product.description}
+                            </p>
+                          </div>
+
+                          {/* Amazon Button */}
+                          {product.amazonLink && (
+                            <div className="flex items-center justify-between mt-4">
+                              <a
+                                href={product.amazonLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 text-sm"
+                              >
+                                <ExternalLink className="h-4 w-4" />
+                                <span>Amazon</span>
+                              </a>
+                            </div>
+                          )}
+                        </div>            
                   {/* Enhanced hover overlay with full description */}
                   <div className="absolute -top-2 left-0 right-0 bg-white p-6 rounded-xl shadow-2xl border-2 border-amber-100 z-50 opacity-0 invisible group-hover/description:opacity-100 group-hover/description:visible transition-all duration-300 transform translate-y-4 group-hover/description:translate-y-0 scale-95 group-hover/description:scale-100">
                     <div className="max-h-32 overflow-y-auto">
@@ -134,7 +148,7 @@ export default function ShopPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between">
                   <div className="flex space-x-2">
                     {product.amazonLink && (
                       <a
