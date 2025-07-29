@@ -28,13 +28,13 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: '1.webp',
+      src: 'https://m.media-amazon.com/images/I/71m7BSIOS5L._AC_SL2000_.jpg',
       alt: 'Western Saddle Detail',
       category: 'Western Saddles'
     },
     {
       id: 2,
-      src: '2.webp',
+      src: 'https://m.media-amazon.com/images/I/71rH+LV9QSL._AC_SX300_SY300_.jpg',
       alt: 'English Saddle Craftsmanship',
       category: 'English Saddles'
     },
