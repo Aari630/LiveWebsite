@@ -1,509 +1,204 @@
-import React from 'react';
-import ShopProduct from './ShopProduct';
+import React, { useState, useEffect } from 'react';
+import { Star, Eye, ArrowLeft, ExternalLink } from 'lucide-react';
+import { shopProducts } from '../data/shopProducts';
+import { Link } from 'react-router-dom';
 
-export interface Product {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  category: string;
-  amazonLink?: string;
-}
-
-const products: Product[] = [
-  {
-    id: 1,
-    name: "Premium Western Trail Saddle",
-    image: "/w1.webp",
-    description: "This handmade western saddle is crafted with premium leather, perfect for long trail rides. Offers superior comfort and durability.",
-    category: "Western Saddles",
-    amazonLink: "https://www.amazon.com/dp/B0DQYKPFK4"
-  },
-  {
-    id: 2,
-    name: "Classic Leather Roping Saddle",
-    image: "/w2.webp",
-    description: "Traditional roping saddle with detailed hand tooling. Built to withstand the rigors of ranch work and roping events.",
-    category: "Western Saddles",
-    amazonLink: "https://www.amazon.com/dp/B0DQYKPFK4"
-  },
-  {
-    id: 3,
-    name: "Elegant Show Saddle",
-    image: "/w3.webp",
-    description: "A beautifully designed show saddle that features intricate silver accents and premium comfort for competition days.",
-    category: "Western Saddles",
-    amazonLink: "https://www.amazon.com/dp/B0DQYKPFK4"
-  },
-    {
-    id: 4,
-    name: "Custom Leather Western Saddle",
-    image: "w4.webp",
-    description:
-      "Western Horse Saddle Teal Pink Black Crystal Show Western Leather Barrel Racer Trail Tack Set with Flower Tooled Design, Barrel Pleasure Saddle, Free Matching Headstall",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Saddle-Pleasure-Matching-Headstall/dp/B0DR1XLC8W?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 5,
-    name: "Western Pleasure Saddle",
-    image: "w5.webp",
-    description:
-      "Western Leather Barrel Racer Trail Tack Set with Flower Tooled Design, Teal and Black Crystal Accents, Barrel Pleasure Western Horse Saddle, Matching Headstall and Breast Collar",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Pleasure-Saddle-Matching-Headstall/dp/B0DR1V7WYM?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 6,
-    name: "Western Barrel Racing Saddle",
-    image: "w6.jpg",
-    description:
-      "Western Padded Cushion Seat Fully Carved Western Carved Genuine Natutal Hand Made Saddle Real in Leather with Free Headstall and Breast Collar",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Western-Cushion-Headstall/dp/B0DS9XM85S?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 7,
-    name: "Western Cutting Saddle",
-    image: "w7.webp",
-    description:
-      "Fully Carved Western Carved Genuine Natutal Hand Made Saddle Black Suede Seat Real in Leather with Free Headstall and Breast Collar",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Western-Genuine-Headstall/dp/B0DS9XDG16?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 8,
-    name: "Western Reining Saddle",
-    image: "w8.webp",
-    description:
-      "Western Horse Leather Hot Seat Tooled Barrel Pleasure Handmade Saddle with Intricate Carved Detailing, Comfortable Hot Seat for Extended Rides, Complete",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Intricate-Detailing-Comfortable/dp/B0DRPCJ8K4?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 9,
-    name: "Western Ranch Saddle",
-    image: "w9.webp",
-    description:
-      "Black Suede Western Leather Saddle, Handcrafted, Floral Tooled, 100% Real Leather Hand Made Saddle Square Cut Skirt with Free Headstall and Breast Collar",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Western-Handcrafted-Headstall/dp/B0DRP5LHYQ?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 10,
-    name: "Western Trail Comfort Saddle",
-    image: "w10.jpg",
-    description:
-      "Western Big Horn Leather Wade Roping Ranch Hard Carved Horse Saddle 10 Leather Handmade Saddle Pleasure Trail/with Complete Set Headstall and Breast Collar",
-    category: "Western Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Handmade-Pleasure-Headstall/dp/B0DT1NLZNP?ref_=ast_sto_dp&th=1&psc=1",
-  },
-
-  // Western Show Saddles (10 products)
-  {
-    id: 11,
-    name: "Elegant Western Show Saddle",
-    image: "s1.jpg",
-    description:
-      "Show Saddle Western Ranch Antique Show Carved Real Leather Saddle with Headstall and Breast Collar Real Silver Metals in Leather 16",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Western-Antique-Leather-Headstall/dp/B0DP3GDQ1L?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 12,
-    name: "Silver Show Western Saddle",
-    image: "s2.webp",
-    description:
-      "Beautiful Western Show Carved Real Leather Fully Hand Made Saddle with Free Headstall and Breast Collar Real Silver Metals in Leather",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Beautiful-Western-Leather-Saddle-Headstall/dp/B0DP5C2LLZ?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 13,
-    name: "Western Show Pleasure Saddle",
-    image: "s3.webp",
-    description:
-      "Western Show Saddle Horse ASaddle,Color Natural Pleasure Trail Silver Streling Metals/Leather Saddle with Complete Set Free Headstall and Breast Collar",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Chestnut-Pleasure-Headstall/dp/B0DS9MLWBZ?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 14,
-    name: "Western Show Trail Saddle",
-    image: "s4.webp",
-    description:
-      "Natural Western Show Saddle Western Ranch Antique Show Carved Real Leather Saddle with Headstall and Breast Collar Real Silver Metals in Leather 16",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Natural-Western-Saddle-Antique-Headstall/dp/B0DP4HJWRL?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 15,
-    name: "Western Show Reining Saddle",
-    image: "s5.jpg",
-    description:
-      "Western Horse Saddles with Sterling Silver Metals, Show-Quality Carved Leather Saddle with Natural Suede Seat, Handcrafted Real Leather Carved Saddle - Premium Handmade Saddle for Show.",
-    category: "Western Show Saddles",
-    amazonLink:
-      "http://amazon.com/Western-Sterling-Show-Quality-Saddle-Handcrafted/dp/B0DQY7YYC7?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 16,
-    name: "Western Show Cutting Saddle",
-    image: "s6.jpg",
-    description:
-      "Western Antique Show Full Carved Leather Hand Made Saddle Made to Order with Headstall and Breast Collar Real Silver Streling Metals/Leather Saddle 16",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Antique-Saddle-Headstall-Streling/dp/B0DNSYVLSP?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 17,
-    name: "Western Show Barrel Saddle",
-    image: "s7.webp",
-    description:
-      "Western Antique Show Full Carved Real Hand Made Leather Saddle Made to Order Real Silver Streling Metals/Leather Saddle 16 with Headstall and Breast Collar",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Antique-Saddle-Streling-Headstall/dp/B0DNT1YZSL?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 18,
-    name: "Western Show Youth Saddle",
-    image: "s8.webp",
-    description:
-      "Western Western Show Carved Handmade Real Sterling Silver Metal Genuine Natural Leather Hand Made Saddle Leather/with Free Headstall and Breast Collar",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Handmade-Sterling-Saddle-Headstall/dp/B0DNWMNPC2?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 19,
-    name: "Western Show Roping Saddle",
-    image: "s9.webp",
-    description:
-      "Western Show Carved Handmade Natural Leather Saddle with Sterling Silver Accents, Black Real Metal Hardware, and Real Leather Construction – Fully Carved, Handcrafted Saddle",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Handmade-Sterling-Construction/dp/B0DV74CLN7?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 20,
-    name: "Western Show Custom Saddle",
-    image: "s10.jpg",
-    description:
-      "New Western Show Saddle with Natural Suede Seat Carved Genuine Leather, Real Metal Accents, Handcrafted Western Show Saddle",
-    category: "Western Show Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Western-Natural-Handcrafted/dp/B0DRFSNWMG?ref_=ast_sto_dp&th=1&psc=1",
-  },
-
-  // Australian Saddles (10 products)
-  {
-    id: 21,
-    name: "Australian Stock Saddle",
-    image: "a1.webp",
-    description:
-      "Australian Outrider Black Aussie Horse Saddle Hand Made Collection Aussie Style with Horn Embossed on Flap, with Leathers & Stirrups and Girth/Complete Set",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Australian-Outrider-Saddle-Collection-Embossed/dp/B0DNWNQQFS?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 22,
-    name: "Australian Trail Saddle",
-    image: "a2.jpg",
-    description:
-      "Australian Handmade Style Half Breed Aussie Stock Leather Saddle Premium Cattle Work, Endurance Riding, Knee Pads",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Australian-Handmade-Endurance/dp/B0DS9XZZVQ?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 23,
-    name: "Australian Campdraft Saddle",
-    image: "a3.webp",
-    description:
-      "Australian Genuine Leather Saddle Pad | Hand Made Saddle Without Horn Aussie Style with Leathers & Stirrups | Seat for Stable Horse Riding Anti Slip Saddle Seat",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Australian-Saddle-Leathers-Stirrups-Complete/dp/B0DNWNSGTW?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 24,
-    name: "Australian Outback Saddle",
-    image: "a4.webp",
-    description:
-      "Australian Embossed Black Leather Stock Horse Saddle with Horn – Australian Style Saddle with Wide Tree & Regular Tree Options – Includes Knee Pads for Enhanced Comfort.",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Australian-Embossed-Black-Leather-Saddle/dp/B0DR8TTGXD?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 25,
-    name: "Australian Barrell Saddle",
-    image: "a5.webp",
-    description:
-      "Ausralian Leather Aussie Style Type Horse Saddle with Horn 17 Inch with Complete Set Saddle for Horses Made to Order",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Ausralian-Leather-Aussie-Saddle-Complete/dp/B0DNR89YPL?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 26,
-    name: "Australian Show Saddle",
-    image: "/a6.webp",
-    description:
-      "Australian Collection Horse Aussie Style Synthetic Saddle Seat Size Half Breed Fender Blue Synthetic Perfect Branded Super Soft Material Branded",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Australian-Collection-Synthetic-Saddle-Material/dp/B0DPB55V4L?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 27,
-    name: "Australian Youth Saddle",
-    image: "/a7.jpg",
-    description:
-      "Synthetic Australian Stock Black Australian Collection Horse Aussie Style Saddle Seat Size Perfect Super Soft Material Branded",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Synthetic-Australian-Collection-Saddle-Material/dp/B0DP7XHTWF?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 28,
-    name: "Australian Endurance Saddle",
-    image: "/a8.webp",
-    description:
-      "Handmade Half Breed Australian Outrider Collection Saddle – Premium Leather Australian Aussie Style Horse Saddle with English Suede Seat, Fully Rigged for Trail Riding, Endurance Events.",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Handmade-Australian-Outrider-Collection-Saddle/dp/B0DQYCQ4ND?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 29,
-    name: "Australian Roping Saddle",
-    image: "/a9.jpg",
-    description:
-      "Australian Stock Outrider Collection – Cow Indium Softie Seat Real Leather Aussie Style Horse Handmade Saddle with Under Girth, Over Girth and Stirrups Comes",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Complete-Australian-Stock-Outrider-Collection/dp/B0DQYDF1WV?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 30,
-    name: "Australian Custom Saddle",
-    image: "/a10.webp",
-    description:
-      "Embossed Australian Long Flap Aussie Style Collection Leather Stock Saddle - Wide Tree & Regular Tree, X-Large 19 for Endurance Riding.",
-    category: "Australian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Embossed-Australian-Collection-Leather-Saddle/dp/B0DRD712NL?ref_=ast_sto_dp&th=1&psc=1",
-  },
-
-  // Endurance Saddles (10 products)
-  {
-    id: 31,
-    name: "Lightweight Endurance Saddle",
-    image: "/e1.webp",
-    description:
-      "Ultra-lightweight endurance saddle for long-distance competitions and trail riding",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Endurance-Saddle-Comfortable-Available/dp/B0F8JFKTWR?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 32,
-    name: "Endurance Trail Saddle",
-    image: "/e2.webp",
-    description:
-      "English Western Endurance Genuine Leather Saddle Western Trail Beautifully Hand Made Collection Horse Leather Saddle Travel Comfortable Seat Saddle",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Endurance-Saddle-Beautifully-Collection-Comfortable/dp/B0DPB5S7Q1?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 33,
-    name: "Endurance Competition Saddle",
-    image: "/e3.jpg",
-    description:
-      "Endurance Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Quilted Cow Indium Black Softie Seat Saddle",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Endurance-Genuine-Leather-Saddle-Comfortable/dp/B0DP3BLB13?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 34,
-    name: "Endurance Distance Saddle",
-    image: "/e4.webp",
-    description:
-      "Brown Endurance Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Plain Cow Indium Black Softie Seat Saddle",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Endurance-Genuine-Leather-Saddle-Comfortable/dp/B0DP3DTG7F?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 35,
-    name: "Endurance Adventure Saddle",
-    image: "/e5.webp",
-    description:
-      "English Western Endurance Quilted Seat Leather Horse Saddle Tone Combination English Rigging, Travel Comfortable Horse Saddle/Quilted Sdeat Travel Comfortable Seat Saddle",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/English-Endurance-Saddle-Combination-Comfortable/dp/B0DP7V4BS6?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 36,
-    name: "Endurance Racing Saddle",
-    image: "/e6.webp",
-    description:
-      "Western Endurance Brown Leather Saddle Cow Indium Softy Seat, Slick Cantle, Fenders Border Tooling Collection Horse Leather Saddle, Durable, Comfortable, Saddle.",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Endurance-Collection-Comfortable/dp/B0DVMNGYSW?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 37,
-    name: "Endurance Comfort Saddle",
-    image: "/e7.webp",
-    description:
-      "English Endurance Leather Saddle | Cutback Skirts, Bulkless English Rigging, Round Pommel, Slick Cantle | Border Tooling Collection",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Endurance-Bulkless-Collection/dp/B0DRJFDKFM?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 38,
-    name: "Endurance Western Saddle",
-    image: "/e8.jpg",
-    description:
-      "Western Endurance Saddle with Comfortable Seat, with Quilted Cutback Skirts, Beautiful Round Pommel, and Premium Leather – Ideal for Endurance Riding, Horseback Riding, and Collectors.",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Western-Saddle-Comfortable-Cutback-Beautiful/dp/B0DQYB8BK5?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 39,
-    name: "Endurance English Saddle",
-    image: "/e9.jpg",
-    description:
-      "Natural Endurance Hand Tooled & Carved Real Leather English Saddle Easy Comfortable Cow Indium Black Softie Seat Saddle/All Customization Available",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Endurance-Comfortable-Customization/dp/B0DXB8J5Z2?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 40,
-    name: "Endurance Custom Saddle",
-    image: "/e10.webp",
-    description:
-      "Endurance Plain Suede Seat Seat Real Drup Dyed Leather Finished Horse Hand Made Saddle Tone Combination English Rigging, Travel Comfortable Seat Saddle",
-    category: "Endurance Saddles",
-    amazonLink:
-      "https://www.amazon.com/Endurance-Finished-Saddle-Combination-Comfortable/dp/B0DP3BRZM9?ref_=ast_sto_dp&th=1&psc=1",
-  },
-
-  // English Saddles (10 products)
-  {
-    id: 41,
-    name: "English Dressage Saddle",
-    image: "/en1.webp",
-    description:
-      "Black English Dressage Style Combination Genuine Real Leather Full Cow Indium Softie English Saddle Horses with Free Complete Bridle and Stirrups Leathers",
-    category: "English Saddles",
-    amazonLink:
-      "https://www.amazon.com/Dressage-Combination-Saddle-Complete-Stirrups/dp/B0DNZ25WX6?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 42,
-    name: "English Jumping Saddle",
-    image: "/en2.jpg",
-    description:
-      "Icelandic Black Cow Indium Softie Genuine Real Leather Hand Made Saddle English Horse Easy Comfortable Quilted Seat Saddle with Free Set",
-    category: "English Saddles",
-    amazonLink:
-      "https://www.amazon.com/Icelandic-Genuine-Leather-Saddle-Comfortable/dp/B0DNXYHMWV?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 43,
-    name: "English All-Purpose Saddle",
-    image: "/en3.webp",
-    description:
-      "English Dressage Style Blue Genuine High Qaulity Leather Full Covered Cow Indium Softie English Horse Saddle Saddle Hand Made Horse Easy Comfortable Plain Cow Black Softie Seat",
-    category: "English Saddles",
-    amazonLink:
-      "https://www.amazon.com/English-Dressage-Genuine-Saddle-Comfortable/dp/B0DP7TPCCF?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 44,
-    name: "English Eventing Saddle",
-    image: "/en4.jpg",
-    description:
-      "English Dressage Style Tan Genuine High Qaulity Leather Full Covered Cow Indium Softie English Horse Saddle Saddle Hand Made Horse Easy Comfortable Plain Cow Black Softie Seat",
-    category: "English Saddles",
-    amazonLink:
-      "https://www.amazon.com/English-Dressage-Genuine-Saddle-Comfortable/dp/B0DP7TNVQW?ref_=ast_sto_dp&th=1&psc=1",
-  },
-
-  // Brazilian Saddles (10 products)
-  {
-    id: 45,
-    name: "Brazilian Vaquero Saddle",
-    image: "/b1.webp",
-    description:
-      "Brazilian Genuine Real Leather English Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle 17 Inches",
-    category: "Brazilian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNKKKPJ8?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 46,
-    name: "Brazilian Trail Saddle",
-    image: "/b2.webp",
-    description:
-      "Brazilian Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle 17 Inches",
-    category: "Brazilian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNSZ87H2?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 47,
-    name: "Brazilian Show Saddle",
-    image: "/b3.webp",
-    description:
-      "Brazilian Genuine Real Leather Hand Made Saddle Cow Indium Softie Hand Tooled English Horse Easy Comfortable Quilted Seat Saddle 17 Inches",
-    category: "Brazilian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNZ2B6R3?ref_=ast_sto_dp&th=1&psc=1",
-  },
-  {
-    id: 48,
-    name: "Brazilian Ranch Saddle",
-    image: "/b4.webp",
-    description:
-      "Blue Seat Brazilian Genuine Real Leather English Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle",
-    category: "Brazilian Saddles",
-    amazonLink:
-      "https://www.amazon.com/Saddle-Fusion-Brazilian-Genuine-Comfortable/dp/B0DRGYY5W2?ref_=ast_sto_dp&th=1&psc=1",
-  }
-
+const categories = [
+  'All Saddles',
+  'Western Saddles',
+  'Western Show Saddles',
+  'Australian Saddles',
+  'Endurance Saddles',
+  'English Saddles',
+  'Brazilian Saddles',
 ];
 
-export default function Shop() {
+export default function ShopPage() {
+  const [selectedProduct, setSelectedProduct] = useState<any>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>('All Saddles');
+
+  const filteredProducts = selectedCategory === 'All Saddles'
+    ? shopProducts
+    : shopProducts.filter(product => product.category === selectedCategory);
+
   return (
-    <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      {products.map((product) => (
-        <ShopProduct key={product.id} product={product} />
-      ))}
+    <div className="min-h-screen bg-gray-50 pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Back to Home */}
+        <div className="mb-8">
+          <Link
+            to="/"
+            className="inline-flex items-center space-x-2 text-amber-600 hover:text-amber-700 transition-colors duration-300"
+          >
+            <ArrowLeft className="h-5 w-5" />
+            <span>Back to Home</span>
+          </Link>
+        </div>
+
+        {/* Page Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Our Premium Saddles
+          </h1>
+          <div className="w-20 h-1 bg-amber-600 rounded-full mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover our exceptional collection of handcrafted saddles, each piece designed
+            with meticulous attention to detail and superior craftsmanship.
+          </p>
+        </div>
+
+        {/* Category Dropdown */}
+        <div className="flex justify-end mb-8">
+          <select
+            className="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-amber-600"
+            value={selectedCategory}
+            onChange={e => setSelectedCategory(e.target.value)}
+          >
+            {categories.map(category => (
+              <option key={category} value={category}>{category}</option>
+            ))}
+          </select>
+        </div>
+
+        {/* Products Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {filteredProducts.map((product, index) => (
+            <div
+              key={product.id}
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden"
+            >
+              {/* Product Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-96 object-contain bg-gray-100 rounded-xl group-hover:scale-110 transition-transform duration-700"
+                  style={{ imageRendering: 'crisp-edges' }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  {product.category}
+                </div>
+
+                {/* Quick View Button */}
+                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <button
+                    onClick={() => setSelectedProduct(product)}
+                    className="bg-white/90 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors duration-300"
+                  >
+                    <Eye className="h-4 w-4 text-gray-700" />
+                  </button>
+                </div>
+
+                {/* Rating */}
+                <div className="absolute bottom-4 left-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-3 w-3 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+              </div>
+
+              {/* Product Info */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                  {product.name}
+                </h3>
+                <div className="relative group/description">
+                  <p className="text-gray-600 mb-4 text-sm line-clamp-2 cursor-pointer hover:text-amber-600 transition-colors duration-200">
+                    {product.description}
+                  </p>
+                  
+                  {/* Enhanced hover overlay with full description */}
+                  <div className="absolute -top-2 left-0 right-0 bg-white p-6 rounded-xl shadow-2xl border-2 border-amber-100 z-50 opacity-0 invisible group-hover/description:opacity-100 group-hover/description:visible transition-all duration-300 transform translate-y-4 group-hover/description:translate-y-0 scale-95 group-hover/description:scale-100">
+                    <div className="max-h-32 overflow-y-auto">
+                      <p className="text-gray-800 text-sm leading-relaxed font-medium">
+                        {product.description}
+                      </p>
+                    </div>
+                    
+                    {/* Enhanced arrow pointer */}
+                    <div className="absolute -bottom-3 left-6 w-6 h-6 bg-white border-r-2 border-b-2 border-amber-100 transform rotate-45"></div>
+                    
+                    {/* Subtle gradient background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 to-white rounded-xl -z-10"></div>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex space-x-2">
+                    {product.amazonLink && (
+                      <a
+                        href={product.amazonLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 text-sm"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        <span>Amazon</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Product Detail Modal */}
+        {selectedProduct && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="relative">
+                <img
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-[500px] object-contain bg-gray-100 rounded-xl"
+                  style={{ imageRendering: 'crisp-edges' }}
+                />
+                <button
+                  onClick={() => setSelectedProduct(null)}
+                  className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors duration-300"
+                >
+                  <Eye className="h-4 w-4 text-gray-700" />
+                </button>
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900">{selectedProduct.name}</h3>
+                  <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    {selectedProduct.category}
+                  </span>
+                </div>
+
+                <p className="text-gray-600 mb-6">{selectedProduct.description}</p>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex space-x-3">
+                    {selectedProduct.amazonLink && (
+                      <a
+                        href={selectedProduct.amazonLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                        <span>View on Amazon</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
