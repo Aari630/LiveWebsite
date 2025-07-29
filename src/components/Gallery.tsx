@@ -40,7 +40,7 @@ export default function Gallery() {
     },
     {
       id: 3,
-      src: '3.webp',
+      src: 'https://m.media-amazon.com/images/I/71i+JEbsGBL._AC_SX300_SY300_.jpg',
       alt: 'Leather Working Process',
       category: 'Craftsmanship'
     },
@@ -58,13 +58,13 @@ export default function Gallery() {
     },
     {
       id: 6,
-      src: '6.webp',
+      src: 'https://m.media-amazon.com/images/I/71xbXPRseUL.__AC_SY300_SX300_QL70_FMwebp_.jpg',
       alt: 'Workshop Environment',
       category: 'Workshop'
     },
     {
       id: 7,
-      src: '7.jpg',
+      src: 'https://m.media-amazon.com/images/I/81Qdyu2zsaL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
       alt: 'Trail Saddle',
       category: 'Trail Gear'
     },
