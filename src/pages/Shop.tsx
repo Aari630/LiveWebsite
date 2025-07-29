@@ -132,7 +132,7 @@ export default function ShopPage() {
                             </a>
                           </div>
                         </div>
-                      )}   // 👈 ONLY close once here
+                      )} 
 
                   {/* Enhanced hover overlay with full description */}
                   <div className="absolute -top-2 left-0 right-0 bg-white p-6 rounded-xl shadow-2xl border-2 border-amber-100 z-50 opacity-0 invisible group-hover/description:opacity-100 group-hover/description:visible transition-all duration-300 transform translate-y-4 group-hover/description:translate-y-0 scale-95 group-hover/description:scale-100">
@@ -147,22 +147,6 @@ export default function ShopPage() {
                     
                     {/* Subtle gradient background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-amber-50/50 to-white rounded-xl -z-10"></div>
-                  </div>
-                </div>
-
-                  <div className="flex items-center justify-between">
-                  <div className="flex space-x-2">
-                    {product.amazonLink && (
-                      <a
-                        href={product.amazonLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2 text-sm"
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                        <span>Amazon</span>
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>
