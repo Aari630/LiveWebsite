@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://visionary-yeot-e9cd0c.netlify.app/sitemap.xml
+Sitemap: https://www.thesaddlefusion.com/sitemap.xml
 
 # Disallow admin or private areas (if any)
 Disallow: /admin/
