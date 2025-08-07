@@ -103,17 +103,7 @@ export default function Header() {
 
           {/* Theme Toggle */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-amber-100 dark:hover:bg-amber-700 transition-colors duration-300 shadow"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <Sun className="h-6 w-6 text-amber-400" />
-              ) : (
-                <Moon className="h-6 w-6 text-gray-700" />
-              )}
-            </button>
+           
           </div>
 
           {/* Mobile Menu Button */}
@@ -155,18 +145,7 @@ export default function Header() {
               )}
             </nav>
 
-            <div className="mt-4 pt-4 border-t flex justify-between items-center">
-              <button
-                onClick={toggleTheme}
-                className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-amber-100 dark:hover:bg-amber-700 transition-colors duration-300 shadow mr-4"
-                aria-label="Toggle theme"
-              >
-                {theme === 'dark' ? (
-                  <Sun className="h-6 w-6 text-amber-400" />
-                ) : (
-                  <Moon className="h-6 w-6 text-gray-700" />
-                )}
-              </button>
+            <div className="mt-4 pt-4 border-t flex justify-end">
               <select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value as "en" | "hi")}
