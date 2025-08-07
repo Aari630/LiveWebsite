@@ -48,7 +48,7 @@ export const shopProducts: Product[] = [
   {
     id: 3,
     name: "Full Carved Flower Tooled Western Saddle with Padded Seat – Premium Real Leather Handcrafted, Carved & Tooled for Barrel Racing, Pleasure Riding, and Training Avaikable",
-    image: "w3.webp",
+    image: "https://m.media-amazon.com/images/I/81WamcDc-PL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     category: "Western Saddles",
     amazonLink:
       "https://www.amazon.com/Carved-Flower-Tooled-Western-Saddle/dp/B0DR85PK2X?ref_=ast_sto_dp&th=1&psc=1",
@@ -75,7 +75,7 @@ export const shopProducts: Product[] = [
   {
     id: 4,
     name: "Western Horse Saddle Teal Pink Black Crystal Show Western Leather Barrel Racer Trail Tack Set with Flower Tooled Design, Barrel Pleasure Saddle, Free Matching Headstall",
-    image: "w4.webp",
+    image: "https://m.media-amazon.com/images/I/71Pni0uwXNL._AC_SL1500_.jpg",
     category: "Western Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Saddle-Pleasure-Matching-Headstall/dp/B0DR1XLC8W?ref_=ast_sto_dp&th=1&psc=1",
@@ -102,7 +102,7 @@ export const shopProducts: Product[] = [
   {
     id: 5,
     name: "Western Leather Barrel Racer Trail Tack Set with Flower Tooled Design, Teal and Black Crystal Accents, Barrel Pleasure Western Horse Saddle, Matching Headstall and Breast Collar",
-    image: "w5.webp",
+    image: "https://m.media-amazon.com/images/I/71Ec9tpnnZL._AC_SX679_.jpg",
     category: "Western Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Pleasure-Saddle-Matching-Headstall/dp/B0DR1V7WYM?ref_=ast_sto_dp&th=1&psc=1",
@@ -364,7 +364,7 @@ export const shopProducts: Product[] = [
   {
     id: 17,
     name: "Western Antique Show Full Carved Real Hand Made Leather Saddle Made to Order Real Silver Streling Metals/Leather Saddle 16 with Headstall and Breast Collar",
-    image: "s7.webp",
+    image: "https://m.media-amazon.com/images/I/81O3ABHO7OL._AC_SX679_.jpg",
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Antique-Saddle-Streling-Headstall/dp/B0DNT1YZSL?ref_=ast_sto_dp&th=1&psc=1",
