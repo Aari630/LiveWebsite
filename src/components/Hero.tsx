@@ -64,7 +64,7 @@ export default function Hero() {
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
                 className="group border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105"
               >
-                {t('getInTouch')}
+                {t('Get In Touch')}
               </button>
             </div>
 
