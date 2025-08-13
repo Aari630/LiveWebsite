@@ -154,5 +154,5 @@ export default function Warranty() {
         </div>
       </div>
     </div>
-  );
+  </>;
 }
