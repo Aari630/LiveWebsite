@@ -19,11 +19,21 @@ import Warranty from "./pages/Warranty";
 function HomePage() {
   return (
     <>
-      <Hero />
-      <About />
-      <Products />
-      <Gallery />
-      <Contact />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="products">
+        <Products />
+      </section>
+      <section id="gallery">
+        <Gallery />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }
