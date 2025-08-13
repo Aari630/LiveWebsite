@@ -50,8 +50,8 @@ export default function Contact() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
               {/* Overlay Card */}
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl max-w-xs text-left flex flex-col gap-3">
-                <div className="flex items-center text-amber-600 font-bold text-lg"><Mail className="mr-2 h-5 w-5" /> Asifinternational225@gmail.com</div>
-                <div className="flex items-center text-amber-600 font-bold text-lg"><Phone className="mr-2 h-5 w-5" /> +91 7880722916</div>
+                <div className="flex items-center text-amber-600 font-bold text-lg"><Mail className="mr-2 h-5 w-5" /> <a href="maito:Asifinternational225@gmail.com">Asifinternational225@gmail.com</a></div>
+                <div className="flex items-center text-amber-600 font-bold text-lg"><Phone className="mr-2 h-5 w-5" /><a href="tel:+91 7880722916"> +91 7880722916+91 7880722916</div>
                 <div className="flex items-center text-gray-600 font-semibold text-base"><MapPin className="mr-2 h-5 w-5" /> 12/4, Juhi Safed Colony,Kanpur – 208014</div>
               </div>
             </div>
