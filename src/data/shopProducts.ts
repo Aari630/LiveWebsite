@@ -57,23 +57,11 @@ export const shopProducts: Product[] = [
   {
     id: 6,
     name: "Western Padded Cushion Seat Fully Carved Western Carved Genuine Natutal Hand Made Saddle Real in Leather with Free Headstall and Breast Collar",
-    image: "w6.jpg",
+    image: "https://m.media-amazon.com/images/I/71JKh74+JyL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices here Western leather Show Horse Saddle in Premium Leather Horse All Sizes All sizes 10"-20" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail. If you have any query, please contact us before buying. Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is smoke free, moisture free and pet free environment. Please provide correct and updated address for shipping. Thank you have a nice day!`,
     category: "Western Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Western-Cushion-Headstall/dp/B0DS9XM85S?ref_=ast_sto_dp&th=1&psc=1",
-    information: `✔ FEATURES : This horse's saddle features a gorgeous hand tooled design in Antique Color. Proprietary designed and extremely robust tree that fits 6 to 8 inches gullet size horses.
-
-*   BALANCE AND COMMUNICATION: The flexibility of the saddle can allow the rider to have better balance, contact, and communication with the horse.Easy Maintenance: Removable components facilitate cleaning and care. Versatile Usage: Suitable for various activities, from horseback riding to cycling.
-    
-*   ✔ Quality: Ergonomic DeDurable Construction: Crafted from high-quality materials for long-lasting use and comfort.sign: Contoured shape provides optimal support and reduces pressure points
-    
-*   Sizes: All sizes are available between in 10 inches to 20 inches. We give all the things whatever the buyers demand according to there requiremnets. Nothing impossible
-    
-*   ✔ COMFORTABILITY & DURABILITY: This Saddle is designed to provide a more ergonomic fit and reduce pressure points on the horse's back. By distributing the rider's weight more evenly, it potentially reduces discomfort and enhances the horse's freedom of movement. This Horse saddle offers superior durability. This leather saddle for horses is designed to withstand the rigors of equestrian activities
-    
-*   ✔ THICK FLEECE UNDERNEATH: Thick fleece material at the bottom of saddle absorb the moisture during the riding and makes the saddle comfortable for rider.
-    
-*   100% SATISFACTION : Customer satisfaction is everything to us. If you have received incorrect or damaged items, please let us know. Your problem will be solved.`
   },
   {
     id: 7,
