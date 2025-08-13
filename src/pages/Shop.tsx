@@ -69,7 +69,7 @@ export default function ShopPage() {
             >
               {/* Product Image */}
               <div className="relative overflow-hidden">
-                <div className="relative cursor-pointer" onClick={() => setSelectedProduct(product)}>
+                <Link to={`/shop/${product.id}`} className="relative cursor-pointer block">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -79,7 +79,7 @@ export default function ShopPage() {
                     style={{ imageRendering: 'crisp-edges' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
+                </Link>
 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -106,12 +106,11 @@ export default function ShopPage() {
 
                {/* Product Info */}
                 <div className="p-6 group">
-                  <h3
-                    className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300 cursor-pointer"
-                    onClick={() => setSelectedProduct(product)}
+                  <Link to={`/shop/${product.id}`}
+                    className="text-xl font-bold text-gray-700 mb-2 group-hover:text-amber-600 transition-colors duration-300 cursor-pointer block"
                   >
                     {product.name}
-                  </h3>
+                  </Link>
                         {/* Amazon Button */}
                         {product.amazonLink && (
                         <div className="flex items-center justify-between mt-4">
@@ -133,73 +132,7 @@ export default function ShopPage() {
           ))}
         </div>
 
-        {/* Product Detail Modal */}
-        {selectedProduct && (
-          <div
-            className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
-            onClick={e => {
-              if (e.target === e.currentTarget) setSelectedProduct(null);
-            }}
-          >
-            <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="flex flex-col md:flex-row">
-                {/* Image Section */}
-                <div className="relative flex-shrink-0 flex justify-center items-center md:w-1/2 p-4">
-                  <img
-                    src={selectedProduct.image}
-                    alt={selectedProduct.name}
-                    loading="eager"
-                    decoding="async"
-                    className="w-full max-w-xs h-[300px] md:h-[400px] object-contain bg-gray-100 rounded-xl"
-                    style={{ imageRendering: 'crisp-edges' }}
-                  />
-                  <button
-                    onClick={() => setSelectedProduct(null)}
-                    className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full hover:bg-white transition-colors duration-300"
-                    aria-label="Close"
-                  >
-                    <span className="text-xl font-bold text-gray-700">&times;</span>
-                  </button>
-                </div>
-                {/* Info Section */}
-                <div className="p-6 flex-1 flex flex-col justify-center">
-                  <div className="flex items-center mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900">{selectedProduct.name}</h3>
-                  </div>
-                  <p className="text-gray-600 mb-6">{selectedProduct.description}</p>
-                  {selectedProduct.information && (
-                    <div className="mb-6">
-                      <h4 className="text-lg font-semibold text-gray-800 mb-2">Information:</h4>
-                      <ul className="list-disc pl-5 text-gray-700 text-sm space-y-1">
-                        {selectedProduct.information
-                          .split(/\n|\r/)
-                          .filter(line => line.trim().startsWith('*'))
-                          .map((line, idx) => (
-                            <li key={idx}>{line.replace(/^\*\s*/, '')}</li>
-                          ))}
-                      </ul>
-                    </div>
-                  )}
-                  <div className="flex items-center justify-between">
-                    <div className="flex space-x-3">
-                      {selectedProduct.amazonLink && (
-                        <a
-                          href={selectedProduct.amazonLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
-                        >
-                          <ExternalLink className="h-5 w-5" />
-                          <span>View on Amazon</span>
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Product Detail Modal is removed - navigation to detail page is used instead */}
       </div>
     </div>
   );

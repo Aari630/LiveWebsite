@@ -1,12 +1,35 @@
-import React, { useEffect, useState } from "react";
-import { ArrowRight, Star } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useLanguage } from "../contexts/LanguageContext";
+import React, { useState, useEffect, useRef } from 'react';
+import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 
-export default function Products() {
+interface ImageGalleryProps {
+  images: Array<{
+    id: number;
+    src: string;
+    alt: string;
+    category?: string;
+  }>;
+  columns?: number;
+  aspectRatio?: 'square' | '4:3' | '16:9' | '3:2';
+  showCategories?: boolean;
+  showZoom?: boolean;
+  className?: string;
+}
+
+export default function ImageGallery({
+  images,
+  columns = 4,
+  aspectRatio = '4:3',
+  showCategories = true,
+  showZoom = true,
+  className = ''
+}: ImageGalleryProps) {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const { t } = useLanguage();
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+  const galleryRef = useRef<HTMLDivElement>(null);
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+  // Intersection observer for section visibility
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -14,155 +37,162 @@ export default function Products() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
-    const element = document.getElementById("products");
-    if (element) {
-      observer.observe(element);
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current);
     }
 
     return () => observer.disconnect();
   }, []);
 
-  const products = [
-    {
-      id: 1,
-      name: "Western Riding Saddle",
-      description:
-        "Premium leather western saddle crafted for comfort and durability",
-      image: "https://m.media-amazon.com/images/I/71i055cq6SL._AC_SL2000_.jpg",
-      rating: 5,
-      featured: true,
-    },
-    {
-      id: 2,
-      name: "English Dressage Saddle",
-      description: "Professional dressage saddle for competitive riding",
-      image: "https://m.media-amazon.com/images/I/51-58VTfH+L._AC_.jpg",
-      rating: 5,
-      featured: false,
-    },
-    {
-      id: 3,
-      name: "Trail Riding Saddle",
-      description: "Comfortable trail saddle perfect for long-distance riding",
-      image: "https://m.media-amazon.com/images/I/718Cvop0A1L._AC_SL2000_.jpg",
-      rating: 4,
-      featured: true,
-    },
-    {
-      id: 4,
-      name: "Youth Riding Saddle",
-      description: "Specially designed saddle for young riders",
-      image: "https://m.media-amazon.com/images/I/6163CCmc-2L._AC_SL2000_.jpg",
-      rating: 5,
-      featured: false,
-    },
-    {
-      id: 5,
-      name: "Racing Saddle",
-      description: "Lightweight racing saddle for competitive performance",
-      image: "https://m.media-amazon.com/images/I/71OEr1A6yFL._AC_SL2000_.jpg",
-      rating: 4,
-      featured: false,
-    },
-    {
-      id: 6,
-      name: "Custom Leather Saddle",
-      description: "Bespoke saddle tailored to your specific requirements",
-      image: "https://m.media-amazon.com/images/I/71HBHniC9RL._AC_SL2000_.jpg",
-      rating: 5,
-      featured: true,
-    },
-  ];
+  // Intersection observer for individual images
+  useEffect(() => {
+    const imageObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute('data-index') || '0');
+            setLoadedImages(prev => new Set([...prev, index]));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '50px' }
+    );
+
+    imageRefs.current.forEach((ref) => {
+      if (ref) {
+        imageObserver.observe(ref);
+      }
+    });
+
+    return () => imageObserver.disconnect();
+  }, [images]);
+
+  const getAspectRatioClass = () => {
+    switch (aspectRatio) {
+      case 'square': return 'aspect-square';
+      case '4:3': return 'aspect-[4/3]';
+      case '16:9': return 'aspect-video';
+      case '3:2': return 'aspect-[3/2]';
+      default: return 'aspect-[4/3]';
+    }
+  };
+
+  const getGridCols = () => {
+    switch (columns) {
+      case 1: return 'grid-cols-1';
+      case 2: return 'grid-cols-1 sm:grid-cols-2';
+      case 3: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3';
+      case 4: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4';
+      case 5: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5';
+      case 6: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6';
+      default: return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4';
+    }
+  };
+
+  const nextImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage((selectedImage + 1) % images.length);
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedImage !== null) {
+      setSelectedImage(selectedImage === 0 ? images.length - 1 : selectedImage - 1);
+    }
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   return (
-    <section id="products" className="py-20 lg:py-32 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div
-          className={`text-center mb-16 transition-all duration-1000 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-          }`}
-        >
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            {t("productsTitle")}
-          </h2>
-          <div className="w-20 h-1 bg-amber-600 rounded-full mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover our exceptional collection of handcrafted saddles and
-            equestrian gear, each piece designed with meticulous attention to
-            detail and superior craftsmanship.
-          </p>
-        </div>
+    <div ref={galleryRef} className={`${className}`}>
+      {/* Gallery Grid */}
+      <div className={`grid ${getGridCols()} gap-6`}>
+        {images.map((image, index) => (
+          <div
+            key={image.id}
+            ref={(el) => (imageRefs.current[index] = el)}
+            data-index={index}
+            className={`group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-500 transform hover:scale-105 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+              } ${getAspectRatioClass()}`}
+            style={{ transitionDelay: `${index * 100}ms` }}
+            onClick={() => setSelectedImage(index)}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-contain bg-gray-100 group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
+            />
 
-        {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product, index) => (
-            <div
-              key={product.id}
-              className={`group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              {/* Product Image */}
-              <Link to={`/product/${product.id}`} className="block">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-contain p-4 bg-white group-hover:scale-105 transition-transform duration-700 cursor-pointer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                  {/* Featured Badge */}
-                  {product.featured && (
-                    <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      Featured
-                    </div>
-                  )}
-
-                  {/* Rating */}
-                  <div className="absolute top-4 right-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
-                    {[...Array(product.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="h-3 w-3 fill-amber-400 text-amber-400"
-                      />
-                    ))}
-                  </div>
-
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-              </Link>
-
-              {/* Product Info */}
-              <div className="p-6">
-                <Link to={`/product/${product.id}`}>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors duration-300 cursor-pointer">
-                    {product.name}
-                  </h3>
-                </Link>
-                <p className="text-gray-600 mb-4 line-clamp-2">
-                  {product.description}
-                </p>
+            {/* Category Badge */}
+            {showCategories && image.category && (
+              <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {image.category}
               </div>
-            </div>
-          ))}
-        </div>
+            )}
 
-        {/* Call to Action */}
-        <div
-          className={`text-center mt-16 transition-all duration-1000 delay-600 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-          }`}
-        ></div>
+            {/* Zoom Indicator */}
+            {showZoom && (
+              <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <ZoomIn className="w-5 h-5 text-gray-700" />
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-    </section>
+
+      {/* Modal */}
+      {selectedImage !== null && (
+        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+          <div className="relative max-w-5xl max-h-full">
+            <img
+              src={images[selectedImage].src}
+              alt={images[selectedImage].alt}
+              className="max-w-full max-h-full object-contain bg-gray-100"
+              loading="eager"
+            />
+
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors duration-300"
+            >
+              <X className="h-6 w-6" />
+            </button>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors duration-300"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+
+            <button
+              onClick={nextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full hover:bg-white/30 transition-colors duration-300"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+
+            {/* Image Info */}
+            <div className="absolute bottom-4 left-4 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-lg">
+              <p className="font-semibold">{images[selectedImage].alt}</p>
+              {images[selectedImage].category && (
+                <p className="text-sm opacity-90">{images[selectedImage].category}</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
-}
+} 
