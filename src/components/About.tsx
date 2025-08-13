@@ -1,4 +1,3 @@
-Edit my code :
 import React, { useEffect, useState } from "react";
 import { Award, Shield, Heart, Users } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
