@@ -104,8 +104,8 @@ export const shopProducts: Product[] = [
   {
     id: 11,
     name: "Show Saddle Western Ranch Antique Show Carved Real Leather Saddle with Headstall and Breast Collar Real Silver Metals in Leather 16",
-    image: "s1.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81pQ-XAp6KL._AC_SY879_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Show Saddle highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Western-Antique-Leather-Headstall/dp/B0DP3GDQ1L?ref_=ast_sto_dp&th=1&psc=1"
@@ -113,8 +113,8 @@ export const shopProducts: Product[] = [
   {
     id: 12,
     name: "Beautiful Western Show Carved Real Leather Fully Hand Made Saddle with Free Headstall and Breast Collar Real Silver Metals in Leather",
-    image: "s2.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71xbXPRseUL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Show Saddle highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Beautiful-Western-Leather-Saddle-Headstall/dp/B0DP5C2LLZ?ref_=ast_sto_dp&th=1&psc=1"
@@ -122,8 +122,8 @@ export const shopProducts: Product[] = [
   {
     id: 13,
     name: "Western Show Saddle Horse ASaddle,Color Natural Pleasure Trail Silver Streling Metals/Leather Saddle with Complete Set Free Headstall and Breast Collar",
-    image: "s3.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/816stIuvCuL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Show highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 13"-19" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail. If you have any query, please contact us before buying. Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is and pet free environment`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Chestnut-Pleasure-Headstall/dp/B0DS9MLWBZ?ref_=ast_sto_dp&th=1&psc=1"
@@ -131,8 +131,8 @@ export const shopProducts: Product[] = [
   {
     id: 14,
     name: "Natural Western Show Saddle Western Ranch Antique Show Carved Real Leather Saddle with Headstall and Breast Collar Real Silver Metals in Leather 16",
-    image: "s4.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/7122LFZ3-cL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Show Saddle highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Natural-Western-Saddle-Antique-Headstall/dp/B0DP4HJWRL?ref_=ast_sto_dp&th=1&psc=1"
@@ -140,8 +140,8 @@ export const shopProducts: Product[] = [
   {
     id: 15,
     name: "Western Horse Saddles with Sterling Silver Metals, Show-Quality Carved Leather Saddle with Natural Suede Seat, Handcrafted Real Leather Carved Saddle - Premium Handmade Saddle for Show",
-    image: "s5.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/51-58VTfH+L._AC_.jpg",
+    description: `The Western Horse Saddle with Sterling Silver Metals is a magnificent saddle designed for both luxury and performance. Crafted from premium real leather, this handmade saddle features sterling silver metals and intricate carved leather tooling, making it the perfect blend of traditional craftsmanship and contemporary style. Whether you're showing your horse in competitions, riding for pleasure, or taking part in a rodeo, this saddle promises unparalleled durability, comfort, and aesthetic appeal. The saddle’s natural suede seat provides extra comfort and a non-slip surface, ensuring a secure ride during long hours in the saddle. Its hand-tooled leather adds artistic detail and flair, elevating it to a work of art that shines in both performance and visual appeal. Real sterling silver hardware, including conchos and decorative accents, brings a touch of luxury and elegance to this high-performance saddle. Designed with both the horse's comfort and rider's performance in mind, this saddle is built for long-lasting use and will continue to impress with its durability and style. Whether for show, pleasure rides, or competitive events, the Western Horse Saddle is a statement piece that combines beauty with functionality, making it a prized possession for any equestrian enthusiast.`,
     category: "Western Show Saddles",
     amazonLink:
       "http://amazon.com/Western-Sterling-Show-Quality-Saddle-Handcrafted/dp/B0DQY7YYC7?ref_=ast_sto_dp&th=1&psc=1"
@@ -149,8 +149,8 @@ export const shopProducts: Product[] = [
   {
     id: 16,
     name: "Western Antique Show Full Carved Leather Hand Made Saddle Made to Order with Headstall and Breast Collar Real Silver Streling Metals/Leather Saddle 16",
-    image: "s6.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81Qdyu2zsaL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Hot seat highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail. If you have any query, please contact us before buying. Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is smoke free, moisture free and pet free environment.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Antique-Saddle-Headstall-Streling/dp/B0DNSYVLSP?ref_=ast_sto_dp&th=1&psc=1"
@@ -158,8 +158,8 @@ export const shopProducts: Product[] = [
   {
     id: 17,
     name: "Western Antique Show Full Carved Real Hand Made Leather Saddle Made to Order Real Silver Streling Metals/Leather Saddle 16 with Headstall and Breast Collar",
-    image: "s7.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81O3ABHO7OL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Hot seat highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail. If you have any query, please contact us before buying. Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is moisture free and pet free environment.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Antique-Saddle-Streling-Headstall/dp/B0DNT1YZSL?ref_=ast_sto_dp&th=1&psc=1"
@@ -167,8 +167,8 @@ export const shopProducts: Product[] = [
   {
     id: 18,
     name: "Western Western Show Carved Handmade Real Sterling Silver Metal Genuine Natural Leather Hand Made Saddle Leather/with Free Headstall and Breast Collar",
-    image: "s8.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81rl2OibOCL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. Western leather Hot seat highlighted Saddle 15 16 17 18 in Premium Leather Horse All Sizes All sizes 15"-18" available. Please indicate what size you would like us to ship in the notes during checkout or send us a message. This traditional style all purpose saddle allows the rider to experience many different english disciplines without spending a fortune. Helps rider develop a secure and balanced seat with concealed knee rolls, padded flaps, and a medium-deep padded seat. This saddle is perfect for riders to work on equitation, and with the padded panels it is also comfortable for the horse. The high cantle and longer flaps makes this suitable for flat work, but the saddle also offers a lower pommel and slightly forward flaps for riders wishing to jump. Multiple D-Rings are great for attaching saddle bags and straps while hacking on the trail. If you have any query, please contact us before buying. Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is and pet free environment Thank you have a nice day!`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Handmade-Sterling-Saddle-Headstall/dp/B0DNWMNPC2?ref_=ast_sto_dp&th=1&psc=1"
@@ -176,8 +176,8 @@ export const shopProducts: Product[] = [
   {
     id: 19,
     name: "Western Show Carved Handmade Natural Leather Saddle with Sterling Silver Accents, Black Real Metal Hardware, and Real Leather Construction – Fully Carved, Handcrafted Saddle",
-    image: "s9.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/6163VfYvqOL._AC_SX679_.jpg",
+    description: `The Western Show Carved Handmade Natural Leather Saddle is a masterpiece of craftsmanship, designed to meet the highest standards of quality, durability, and style for both show competitions and everyday riding. This saddle is meticulously handcrafted from genuine natural leather, providing premium strength and comfort for long hours of riding, whether in the arena or on the trail. Featuring sterling silver accents and black real metal hardware, this saddle not only offers stunning visual appeal but is also built for longevity and performance. The intricate hand-carved details enhance its aesthetic, making it a true work of art. The natural leather offers a sleek, elegant finish, while the sterling silver trim adds a touch of sophistication and distinction to your riding gear. Perfect for Western riders, this saddle features a deeply carved design that reflects a timeless Western aesthetic, making it ideal for showing, trail riding, and pleasure rides. The real leather and black metal hardware ensure stability, comfort, and durability, providing both the rider and the horse with a secure and smooth experience during all types of rides. Whether you're participating in a Western show, taking a long trail ride, or simply looking for a stylish and functional saddle for everyday use, this beautifully crafted handmade leather saddle will elevate your riding experience. Its sterling silver accents and real metal fittings make it an eye-catching, elegant choice for equestrians who value both form and function.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Handmade-Sterling-Construction/dp/B0DV74CLN7?ref_=ast_sto_dp&th=1&psc=1"
@@ -185,8 +185,8 @@ export const shopProducts: Product[] = [
   {
     id: 20,
     name: "New Western Show Saddle with Natural Suede Seat Carved Genuine Leather, Real Metal Accents, Handcrafted Western Show Saddle",
-    image: "s10.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71rH+LV9QSL._AC_SX679_.jpg",
+    description: `The Western Show Saddle with a Natural Suede Seat is the epitome of high-quality craftsmanship, designed for competitions, pleasure rides, and training sessions. This saddle is handmade from genuine leather, with intricate carved designs that highlight the saddle's superior artistry and timeless Western style. The combination of real leather and real metal accents ensures that this saddle not only looks impressive but also stands up to the demands of frequent riding. The saddle features a natural suede seat that offers an exceptional balance of comfort and traction, helping the rider maintain stability during rides. The real leather used in the construction is both durable and flexible, allowing for a more comfortable fit over time as it naturally molds to the rider and horse. Whether you are showing in competitions or out for a pleasure ride, the Western Show Saddle delivers both elegance and functionality. This saddle is perfect for Western riding enthusiasts, providing superior control, comfort, and style. The hand-carved designs, coupled with real metal accents, give it an authentic, professional appearance that is sure to impress at any event. The genuine leather construction and high-quality materials make this saddle a long-lasting, reliable investment for your riding needs.`,
     category: "Western Show Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Western-Natural-Handcrafted/dp/B0DRFSNWMG?ref_=ast_sto_dp&th=1&psc=1"
