@@ -288,8 +288,8 @@ export const shopProducts: Product[] = [
   {
     id: 31,
     name: "Ultra-lightweight endurance saddle for long-distance competitions and trail riding",
-    image: "e1.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71FjJELyMAL._AC_SX679_.jpg",
+    description: `The Horse Endurance Black Leather Saddle is a premium quality saddle designed for those who demand comfort, durability, and style during endurance rides, trail riding, or simply as part of a saddle collection. Crafted with high-quality leather, this saddle features a quilted seat and cow indium softy seat, providing exceptional comfort for long rides while maintaining a secure and balanced fit. The slick cantle design ensures freedom of movement and prevents discomfort, even after hours of riding. The hand-tooled detailing on the saddle adds an elegant touch, blending functional craftsmanship with decorative design. This saddle’s premium leather construction offers longevity, and its flexibility ensures that it adjusts to the rider’s form over time, offering a personalized feel with each use. The cow indium softy seat provides added cushioning, perfect for endurance riding or any ride that requires long hours in the saddle. The slick cantle design enhances the saddle’s aesthetic appeal while providing better control and stability. The black leather finish and intricate tooling give the saddle a timeless, classic Western look, making it a perfect choice for both functional riding and collector’s display. Whether you're engaging in endurance competitions, pleasure rides, or trail riding, this saddle delivers both comfort and style, ensuring your horse and you can ride for hours with ease.`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Endurance-Saddle-Comfortable-Available/dp/B0F8JFKTWR?ref_=ast_sto_dp&th=1&psc=1"
@@ -297,8 +297,8 @@ export const shopProducts: Product[] = [
   {
     id: 32,
     name: "English Western Endurance Genuine Leather Saddle Western Trail Beautifully Hand Made Collection Horse Leather Saddle Travel Comfortable Seat Saddle",
-    image: "e2.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/912jaCrJ13L._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Endurance-Saddle-Beautifully-Collection-Comfortable/dp/B0DPB5S7Q1?ref_=ast_sto_dp&th=1&psc=1"
@@ -306,8 +306,8 @@ export const shopProducts: Product[] = [
   {
     id: 33,
     name: "Endurance Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Quilted Cow Indium Black Softie Seat Saddle",
-    image: "e3.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71DlGRqPFXL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Endurance-Genuine-Leather-Saddle-Comfortable/dp/B0DP3BLB13?ref_=ast_sto_dp&th=1&psc=1"
@@ -315,8 +315,10 @@ export const shopProducts: Product[] = [
   {
     id: 34,
     name: "Brown Endurance Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Plain Cow Indium Black Softie Seat Saddle",
-    image: "e4.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/614g4mCf0UL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent
+
+`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Endurance-Genuine-Leather-Saddle-Comfortable/dp/B0DP3DTG7F?ref_=ast_sto_dp&th=1&psc=1"
@@ -324,8 +326,8 @@ export const shopProducts: Product[] = [
   {
     id: 35,
     name: "English Western Endurance Quilted Seat Leather Horse Saddle Tone Combination English Rigging, Travel Comfortable Horse Saddle/Quilted Sdeat Travel Comfortable Seat Saddle",
-    image: "e5.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71KJoTsu7IL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/English-Endurance-Saddle-Combination-Comfortable/dp/B0DP7V4BS6?ref_=ast_sto_dp&th=1&psc=1"
@@ -333,8 +335,8 @@ export const shopProducts: Product[] = [
   {
     id: 36,
     name: "EWestern Endurance Brown Leather Saddle Cow Indium Softy Seat, Slick Cantle, Fenders Border Tooling Collection Horse Leather Saddle, Durable, Comfortable, Saddle",
-    image: "e6.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/8113djQyW3L._AC_SX679_.jpg",
+    description: `The Western Endurance Brown Leather Saddle is designed to provide comfort, durability, and style for both trail riders and endurance riders. This saddle is made with high-quality cowhide leather and features a softy seat made from Indium Cowhide for a superior riding experience. The saddle is ideal for those long-distance rides, offering excellent support and comfort throughout your journey. With a slick cantle, this saddle provides a sleek, smooth finish while ensuring durability for long-lasting use. The fenders are beautifully decorated with border tooling, adding to the saddle’s traditional western charm. Whether you're heading out for a trail ride, a pleasure ride, or endurance events, this saddle offers the right mix of comfort, performance, and aesthetic appeal. The saddle's softy seat ensures that you can ride for extended hours without feeling discomfort, while the strong leather fenders provide reliable, adjustable support. Western-style craftsmanship is evident in every detail of the saddle, from its sturdy construction to its decorative tooling. This saddle is perfect for those who value quality craftsmanship and comfort, whether they’re beginners or seasoned riders. Built to fit a range of horses, the Western Endurance Saddle provides the necessary support and balance, allowing for a smooth ride during any riding adventure. Whether you're out on the trail or participating in endurance events, this saddle is designed to keep both you and your horse comfortable and secure.`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Endurance-Collection-Comfortable/dp/B0DVMNGYSW?ref_=ast_sto_dp&th=1&psc=1"
@@ -342,8 +344,9 @@ export const shopProducts: Product[] = [
   {
     id: 37,
     name: "English Endurance Leather Saddle | Cutback Skirts, Bulkless English Rigging, Round Pommel, Slick Cantle | Border Tooling Collection",
-    image: "e7.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/6163CCmc-2L._AC_SX679_.jpg",
+    description: `The English Endurance Leather Saddle is designed for riders who value comfort, performance, and style during long rides and endurance events. With its combination of cutback skirts, bulkless English rigging, round pommel, and slick cantle, this saddle offers exceptional comfort and superior balance. Perfect for endurance riding, trail adventures, or competitive equestrian events, the saddle's design ensures you and your horse experience comfort and security on any terrain. Crafted from premium leather, this saddle features intricate border tooling for a touch of elegance while maintaining functionality and durability. The cutback skirts enhance the horse’s shoulder movement, providing the freedom needed for long-distance rides, while the bulkless rigging reduces weight and ensures a closer connection between the rider and horse. The round pommel improves rider stability and balance, and the slick cantle offers additional support and comfort for the rider, especially during long hours in the saddle. Whether you're involved in competitive endurance races, training, or leisure trail riding, the English Endurance Leather Saddle is designed to meet the needs of both the horse and rider, providing a comfortable, balanced, and stylish solution for all your equestrian needs.
+`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Endurance-Bulkless-Collection/dp/B0DRJFDKFM?ref_=ast_sto_dp&th=1&psc=1"
@@ -351,8 +354,8 @@ export const shopProducts: Product[] = [
   {
     id: 38,
     name: "Western Endurance Saddle with Comfortable Seat, with Quilted Cutback Skirts, Beautiful Round Pommel, and Premium Leather – Ideal for Endurance Riding, Horseback Riding, and Collectors",
-    image: "e8.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/61Ux0R-LR+L._AC_SX679_.jpg",
+    description: `This Western Saddle is a true work of art, offering both comfort and durability for riders who demand the best for endurance riding, training, or simply enjoying a day out on the trails. Featuring a comfortable seat, cutback skirts, and a beautiful round pommel, this saddle is expertly crafted from premium leather to provide both style and strength. The ergonomically designed seat ensures comfort even during long rides, while the cutback skirts allow for greater mobility and freedom of movement, making this saddle ideal for endurance riding. Whether you're training for competitive events, participating in long-distance rides, or just enjoying a leisurely ride, this saddle provides the perfect combination of comfort and functionality. The round pommel not only enhances the saddle’s aesthetic appeal but also improves its balance and fit, ensuring stability during rides. The premium leather construction offers a luxurious feel and will naturally develop a rich patina over time, adding character and beauty to the saddle. The craftsmanship of this saddle makes it not only an excellent tool for serious riders but also a collector's item. With its classic Western design and superior materials, this saddle is a perfect addition to any rider’s collection or for those who want the best in both performance and style.`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Western-Saddle-Comfortable-Cutback-Beautiful/dp/B0DQYB8BK5?ref_=ast_sto_dp&th=1&psc=1"
@@ -360,8 +363,8 @@ export const shopProducts: Product[] = [
   {
     id: 39,
     name: "Natural Endurance Hand Tooled & Carved Real Leather English Saddle Easy Comfortable Cow Indium Black Softie Seat Saddle/All Customization Available",
-    image: "e9.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81YC0K2d3rL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Endurance-Comfortable-Customization/dp/B0DXB8J5Z2?ref_=ast_sto_dp&th=1&psc=1"
@@ -369,8 +372,8 @@ export const shopProducts: Product[] = [
   {
     id: 40,
     name: "Endurance Plain Suede Seat Seat Real Drup Dyed Leather Finished Horse Hand Made Saddle Tone Combination English Rigging, Travel Comfortable Seat Saddle",
-    image: "e10.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81Ggi2uupxL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ENDURANCE HORSE SADDLE This English Endurance Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent`,
     category: "Endurance Saddles",
     amazonLink:
       "https://www.amazon.com/Endurance-Finished-Saddle-Combination-Comfortable/dp/B0DP3BRZM9?ref_=ast_sto_dp&th=1&psc=1"
