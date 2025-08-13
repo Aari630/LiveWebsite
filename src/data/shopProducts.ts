@@ -196,8 +196,8 @@ export const shopProducts: Product[] = [
   {
     id: 21,
     name: "Australian Outrider Black Aussie Horse Saddle Hand Made Collection Aussie Style with Horn Embossed on Flap, with Leathers & Stirrups and Girth/Complete Set",
-    image: "a1.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71Sa4gb1XbL._AC_SX679_.jpg",
+    description: `Item Description Australian leather Horse saddle Aussie on Australian Style saddle on genuine leather all sizes A comfortable Australian saddle for those who spend long hours riding and need the comfort and closeness to the horse that the Stock saddle offers. Reinforced knee pads, deep seat, brass plated hardware and supple smooth leather throughout. Some of the response and feedback we get from our customers that have purchased this saddle are that riders with back pain, hip and knee joint issues, this saddle allows the freedom of movement in the saddle and still the security for a comfortable ride. Complete with fittings. Also Available in All Leather Available in seat sizes 16",17",18" and 19". Remember when determining seat size go up 2 seats from Western to Australian. Example: If you ride in a 16" Western Saddle then go to the 18" Australian Stock saddle`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Australian-Outrider-Saddle-Collection-Embossed/dp/B0DNWNQQFS?ref_=ast_sto_dp&th=1&psc=1"
@@ -205,8 +205,8 @@ export const shopProducts: Product[] = [
   {
     id: 22,
     name: "Australian Handmade Style Half Breed Aussie Stock Leather Saddle Premium Cattle Work, Endurance Riding, Knee Pads",
-    image: "a2.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71etgXvWj2L._AC_SX679_.jpg",
+    description: `Australian leather Horse saddle Aussie on Australian Style saddle on genuine leather all sizes A comfortable Australian saddle for those who spend long hours riding and need the comfort and closeness to the horse that the Stock saddle offers. Reinforced knee pads, deep seat, brass plated hardware and supple smooth leather throughout. Some of the response and feedback we get from our customers that have purchased this saddle are that riders with back pain, hip and knee joint issues, this saddle allows the freedom of movement in the saddle and still the security for a comfortable ride. Complete with fittings. Also Available in All Leather Available in seat sizes 16",17",18" and 19". Remember when determining seat size go up 2 seats from Western to Australian. Example: If you ride in a 16" Western Saddle then go to the 18" Australian Stock saddle Please note you can purchase 3 different seat sizes on this listing as well as the Saddle Only or as a Complete Package Welcome to The Horse Club Store"! Please take a look, if you can't find what you are looking for, let us know and we will do our best to help! We have many other items in our store and more being added daily. Please Note: At this time we are shipping any items we can in a timely manner. However with the current virus outbreak we are experiencing delays with shipments on some of the items we offer. With State Gov requiring mandatory shutdowns of businesses, our warehouse is very short staffed. Please understand we are doing everything we can to keep things moving as much as we possibly can. If you have questions please feel free to contact us. We are working everyday and taking orders but please understand because of lack of warehouse workers and quarantine requirements we will see delays on some items. We Are truly grateful for your orders as we always are but during this time when small businesses are struggling to stay in business we feel blessed to receive your order and do so appreciate you. Thank you so much for your business, your understanding and your continued support as we all work to navigate through this uncertain time in our world`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Australian-Handmade-Endurance/dp/B0DS9XZZVQ?ref_=ast_sto_dp&th=1&psc=1",
@@ -214,7 +214,8 @@ export const shopProducts: Product[] = [
   {
     id: 23,
     name: "Australian Genuine Leather Saddle Pad | Hand Made Saddle Without Horn Aussie Style with Leathers & Stirrups | Seat for Stable Horse Riding Anti Slip Saddle Seat",
-    image: "a3.webp",
+    image: "https://m.media-amazon.com/images/I/71Uaw1f5VIL._AC_SX679_.jpg",
+    description: `Australian Aussie Horse Genuine Real Leather Saddle Pad – the perfect companion for your horseback riding adventures. Handcrafted with precision and care, this Australian-style saddle pad offers the perfect balance of comfort, durability, and style. Designed for both leisure riders and serious equestrians, this saddle pad combines traditional Australian craftsmanship with modern features, making it an excellent choice for a wide range of riding activities. Whether you're embarking on a western horse trail ride, competing in an English riding competition, or simply enjoying a ride through the countryside, this saddle is equipped to handle it all. The saddle pad is designed with a two-flap construction for optimal support and comfort, ensuring a pleasant riding experience. The cushioned design helps to alleviate pressure, providing your horse with comfort during long rides. The genuine leather construction not only ensures durability but also gives the saddle a classic, timeless look. Its anti-slip feature helps to keep the saddle firmly in place while you're riding, preventing any unwanted movement. The Barcoo saddles style gives this pad a distinct Australian flair, perfect for those who appreciate the elegance and ruggedness of southwestern equestrian styles. This saddle is well-suited for a wide range of horses and riders. Available in various seat sizes, it accommodates riders of all sizes and ensures a comfortable fit. Whether you're using it for adult horses or monturas para caballos adultos, the saddle guarantees a secure fit that promotes a stable and enjoyable ride. With its brown leather finish and quality craftsmanship, this saddle pad adds a touch of sophistication to any horse. It's more than just a saddle—it's a tool that enhances both your and your horse’s performance and comfort, whether you're riding on trails or in a stable.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Australian-Saddle-Leathers-Stirrups-Complete/dp/B0DNWNSGTW?ref_=ast_sto_dp&th=1&psc=1",
@@ -222,8 +223,8 @@ export const shopProducts: Product[] = [
   {
     id: 24,
     name: "Australian Embossed Black Leather Stock Horse Saddle with Horn – Australian Style Saddle with Wide Tree & Regular Tree Options – Includes Knee Pads for Enhanced Comfort.",
-    image: "a4.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81ZjxauI2EL._AC_SX679_.jpg",
+    description: `The Australian Embossed Black Leather Stock Horse Saddle with Horn is a true testament to exceptional craftsmanship and rugged style. Handcrafted with premium black leather, this saddle offers a unique embossed design that reflects the traditional Australian stock horse style, perfect for riders who seek both aesthetics and durability. The saddle features a horn, ideal for roping, stock work, or general ranch tasks. Available in both wide tree and regular tree options, it provides the ideal fit for various horse breeds, ensuring comfort and a secure fit for both the rider and the horse. Designed for long rides, training, and work on the ranch, this saddle includes knee pads, providing added protection and comfort for the rider. Whether you're working cattle, trail riding, or participating in equestrian events, the combination of high-quality materials, ergonomic design, and additional accessories like knee pads makes this saddle an exceptional choice for any rider. With a wide tree or regular tree, you can customize the saddle to meet your needs, ensuring a comfortable and balanced ride every time.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Australian-Embossed-Black-Leather-Saddle/dp/B0DR8TTGXD?ref_=ast_sto_dp&th=1&psc=1"
@@ -231,8 +232,8 @@ export const shopProducts: Product[] = [
   {
     id: 25,
     name: "Ausralian Leather Aussie Style Type Horse Saddle with Horn 17 Inch with Complete Set Saddle for Horses Made to Order",
-    image: "a5.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71HLf9Q7MCL._AC_SX679_.jpg",
+    description: `Australian leather Horse saddle Aussie on Australian style stock saddle on genuine leather 17" all sizes A comfortable Australian saddle for those who spend long hours riding and need the comfort and closeness to the horse that the Stock saddle offers. Reinforced knee pads, deep seat, brass plated hardware and supple smooth leather throughout. Some of the response and feedback we get from our customers that have purchased this saddle are that riders with back pain, hip and knee joint issues, this saddle allows the freedom of movement in the saddle and still the security for a comfortable ride. Complete with fittings. Also Available in All Leather Available in seat sizes 16",17",18" and 19". Remember when determining seat size go up 2 seats from Western to Australian. Example: If you ride in a 16" Western Saddle then go to the 18" Australian Stock saddle Please note you can purchase 3 different seat sizes on this listing as well as the Saddle Only or as a Complete Package Saddle Features: Tree: Wooden 2 1/2" Horn Cantle: 3" Swell: 19" ear to ear Gullet: 8" Complete genuine Leather Weight: 12 kg Welcome to The Horse Club Store"! Please take a look, if you can't find what you are looking for, let us know and we will do our best to help! We have many other items in our store and more being added daily. Please Note: At this time we are shipping any items we can in a timely manner. However with the current virus outbreak we are experiencing delays with shipments on some of the items we offer. With State Gov requiring mandatory shutdowns of businesses, our warehouse is very short staffed. Please understand we are doing everything we can to keep things moving as much as we possibly can. If you have questions please feel free to contact us. We are working everyday and taking orders but please understand because of lack of warehouse workers and quarantine requirements we will see delays on some items. We Are truly grateful for your orders as we always are but during this time when small businesses are struggling to stay in business we feel blessed to receive your order and do so appreciate you. Thank you so much for your business, your understanding and your continued support as we all work to navigate through this uncertain time in our world`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Ausralian-Leather-Aussie-Saddle-Complete/dp/B0DNR89YPL?ref_=ast_sto_dp&th=1&psc=1"
@@ -240,8 +241,8 @@ export const shopProducts: Product[] = [
   {
     id: 26,
     name: "Australian Collection Horse Aussie Style Synthetic Saddle Seat Size Half Breed Fender Blue Synthetic Perfect Branded Super Soft Material Branded",
-    image: "a6.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81sA1vRT91L._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at rock bottom prices. FINEST QUALITY SUEDE SYNTHETIC AND SOFT MATERIAL USED SOLID BROSS FITTINGS MAKE IT MORE BEAUTIFUL & DURABLE SOLID LONG LIFE WOODEN TREE PERFECT BALANCED PANELS MAKES YOUR HORSE MORE HAPPY ALONG WITH PROFESSIONAL RIDING COMFORTABLE SEAT FOR GREAT RIDING PLEASURE SIZE AVAILABLE: SEAT: All The saddle is constructed on a strong Fiber tree with swinging fenders, aluminum stirrups, and an anti-slip fur-lined panel. Made with good quality synthetic sued and chrome-plated fittings, this chair features an anti-slip seat, rear slots for an optional flank girth, and a comfortable back. Standard gullets are 6" inches wide at their widest point. Knee pads ensure a comfortable and safe ride. Please take a look, if you can't find what you are looking for, let us know and we will do our best to help! We have many other items in our store and more being added daily. Please Note: At this time we are shipping any items we can in a timely manner. However with the current virus outbreak we are experiencing delays with shipments on some of the items we offer. With State Gov requiring mandatory shutdowns of businesses, our warehouse is very short staffed. Please understand we are doing everything we can to keep things moving as much as we possibly can. If you have questions please feel free to contact us. We are working everyday and taking orders but please understand because of lack of warehouse workers and quarantine requirements we will see delays on some items. We Are truly grateful for your orders as we always are but during this time when small businesses are struggling to stay in business we feel blessed to receive your order and do so appreciate you. Thank you so much for your business, your understanding and your continued support as we all work to navigate through this uncertain time in our world.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Australian-Collection-Synthetic-Saddle-Material/dp/B0DPB55V4L?ref_=ast_sto_dp&th=1&psc=1"
@@ -249,8 +250,8 @@ export const shopProducts: Product[] = [
   {
     id: 27,
     name: "Synthetic Australian Stock Black Australian Collection Horse Aussie Style Saddle Seat Size Perfect Super Soft Material Branded",
-    image: "a7.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/719+VwrI5IL._AC_SX679_.jpg",
+    description: `Top Brand and Quality products at rock bottom prices. FINEST QUALITY SUEDE SYNTHETIC AND SOFT MATERIAL USED SOLID BROSS FITTINGS MAKE IT MORE BEAUTIFUL & DURABLE SOLID LONG LIFE WOODEN TREE PERFECT BALANCED PANELS MAKES YOUR HORSE MORE HAPPY ALONG WITH PROFESSIONAL RIDING COMFORTABLE SEAT FOR GREAT RIDING PLEASURE SIZE AVAILABLE: SEAT: All The saddle is constructed on a strong Fiber tree with swinging fenders, aluminum stirrups, and an anti-slip fur-lined panel. Made with good quality synthetic sued and chrome-plated fittings, this chair features an anti-slip seat, rear slots for an optional flank girth, and a comfortable back. Standard gullets are 6" inches wide at their widest point. Knee pads ensure a comfortable and safe ride. Please take a look, if you can't find what you are looking for, let us know and we will do our best to help! We have many other items in our store and more being added daily. Please Note: At this time we are shipping any items we can in a timely manner. However with the current virus outbreak we are experiencing delays with shipments on some of the items we offer. With State Gov requiring mandatory shutdowns of businesses, our warehouse is very short staffed. Please understand we are doing everything we can to keep things moving as much as we possibly can. If you have questions please feel free to contact us. We are working everyday and taking orders but please understand because of lack of warehouse workers and quarantine requirements we will see delays on some items. We Are truly grateful for your orders as we always are but during this time when small businesses are struggling to stay in business we feel blessed to receive your order and do so appreciate you. Thank you so much for your business, your understanding and your continued support as we all work to navigate through this uncertain time in our world.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Synthetic-Australian-Collection-Saddle-Material/dp/B0DP7XHTWF?ref_=ast_sto_dp&th=1&psc=1"
@@ -258,8 +259,8 @@ export const shopProducts: Product[] = [
   {
     id: 28,
     name: "Handmade Half Breed Australian Outrider Collection Saddle – Premium Leather Australian Aussie Style Horse Saddle with English Suede Seat, Fully Rigged for Trail Riding, Endurance Events",
-    image: "a8.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/41VaTI-JWuL._AC_.jpg",
+    description: `The Half Breed Australian Outrider Collection saddle is a premium-quality, handmade saddle designed to offer both superior comfort and functionality for riders. This saddle features the classic Aussie style with a unique twist, incorporating English suede seat for added comfort and style. Perfectly suited for trail riders, endurance riders, and working cowboys, this saddle offers exceptional durability and ergonomic support for both horse and rider during long rides and demanding tasks. The English suede seat provides a luxurious, soft, grippy feel, offering comfort and stability for the rider on all types of terrain, especially during extended rides. It ensures that the rider stays securely positioned, whether navigating challenging trails or managing livestock on a ranch. The Aussie style design is known for its deep, secure seat, which enhances rider balance and allows for optimal control. The saddle’s construction also includes premium leather materials that ensure longevity and performance in rugged conditions. Ideal for working with livestock, engaging in endurance competitions, or simply enjoying long rides, this saddle is both comfortable and practical. It features all the necessary components for a full riding experience, including leather stirrups, rigging, and adjustable features to ensure the perfect fit for any rider. Whether you're new to riding or a seasoned equestrian, this saddle provides reliability, comfort, and durability in any environment.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Handmade-Australian-Outrider-Collection-Saddle/dp/B0DQYCQ4ND?ref_=ast_sto_dp&th=1&psc=1"
@@ -267,8 +268,8 @@ export const shopProducts: Product[] = [
   {
     id: 29,
     name: "Australian Stock Outrider Collection – Cow Indium Softie Seat Real Leather Aussie Style Horse Handmade Saddle with Under Girth, Over Girth and Stirrups Comes",
-    image: "a9.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/617W2MtA+VL._AC_SY879_.jpg",
+    description: `The Complete Set with Australian Stock Outrider Collection is a premium-quality, handmade saddle designed to offer superior performance and comfort for riders who demand the best. With its Australian Stock Outrider styling, this saddle combines tradition and modern craftsmanship, making it perfect for a variety of riding disciplines such as trail riding, endurance events, and working cattle. Crafted using the finest softie leather for the seat, this saddle ensures a comfortable riding experience for both the rider and the horse. The Aussie style saddle is renowned for its ability to provide the necessary balance, security, and ergonomic support that is essential for long, rigorous rides. Whether you're riding on rugged trails or participating in endurance competitions, this saddle ensures that you and your horse stay comfortable, protected, and in control. This set includes all the essential accessories, ensuring you're ready to ride right away. The English Softie seat adds an extra level of comfort, providing a soft, padded ride that reduces fatigue on long journeys. With handmade craftsmanship, every detail has been considered to offer a secure and stable fit. The saddle's design also includes high-quality leather straps, stirrups, and rigging, making it fully functional for a range of activities, from working with livestock to long-distance riding. Whether you are an experienced rider or a newcomer, this saddle offers unparalleled reliability and premium performance.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Complete-Australian-Stock-Outrider-Collection/dp/B0DQYDF1WV?ref_=ast_sto_dp&th=1&psc=1"
@@ -276,8 +277,8 @@ export const shopProducts: Product[] = [
   {
     id: 30,
     name: "Embossed Australian Long Flap Aussie Style Collection Leather Stock Saddle - Wide Tree & Regular Tree, X-Large 19 for Endurance Riding",
-    image: "a10.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71oxpCuAH1L._AC_SX679_.jpg",
+    description: `Experience the perfect blend of traditional Aussie craftsmanship and modern comfort with the Embossed Australian Long Flap Aussie Style Collection Leather Stock Saddle. Designed for riders who demand both style and performance, this saddle is crafted from premium leather, featuring an embossed finish that adds a touch of elegance and uniqueness. The saddle is available in both Wide Tree and Regular Tree options, providing a customized fit for your horse. Whether you're an endurance rider or a casual equestrian, this saddle is made to offer long-lasting comfort and superior stability during long rides. The long flap design and high-quality leather provide enhanced leg support, while the wide tree ensures a secure and balanced fit for larger horses. Available in an X-Large 19" seat size, this saddle is designed to provide optimal comfort and performance, making it ideal for endurance riding and other demanding equestrian activities.`,
     category: "Australian Saddles",
     amazonLink:
       "https://www.amazon.com/Embossed-Australian-Collection-Leather-Saddle/dp/B0DRD712NL?ref_=ast_sto_dp&th=1&psc=1"
