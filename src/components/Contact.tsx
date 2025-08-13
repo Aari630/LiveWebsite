@@ -13,7 +13,7 @@ export default function About() {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById("about");
@@ -23,31 +23,6 @@ export default function About() {
 
     return () => observer.disconnect();
   }, []);
-
-  const features = [
-    {
-      icon: Award,
-      title: "Premium Quality",
-      description:
-        "Handcrafted with finest materials and traditional techniques",
-    },
-    {
-      icon: Shield,
-      title: "Durable Design",
-      description:
-        "Built to last with superior craftsmanship and attention to detail",
-    },
-    {
-      icon: Heart,
-      title: "Passionate Craftsmanship",
-      description: "Each piece reflects our love for equestrian excellence",
-    },
-    {
-      icon: Users,
-      title: "Customer Focused",
-      description: "Dedicated to meeting the unique needs of every rider",
-    },
-  ];
 
   return (
     <section id="about" className="py-20 lg:py-32 bg-white">
@@ -107,30 +82,77 @@ export default function About() {
 
             {/* Features Grid */}
             <div className="grid grid-cols-2 gap-6 mt-12">
-              {features.map((feature, index) => {
-                const IconComponent = feature.icon;
-                return (
-                  <div
-                    key={feature.title}
-                    className={`text-center p-6 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all duration-500 transform hover:-translate-y-2 ${
-                      isVisible
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-8 opacity-0"
-                    }`}
-                    style={{ transitionDelay: `${(index + 4) * 100}ms` }}
-                  >
-                    <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="h-6 w-6 text-amber-600" />
-                    </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
-                );
-              })}
+              {/* Feature 1 */}
+              <div
+                className={`text-center p-6 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all duration-500 transform hover:-translate-y-2 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: "400ms" }}
+              >
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-amber-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Premium Quality
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Handcrafted with finest materials and traditional techniques
+                </p>
+              </div>
+
+              {/* Feature 2 */}
+              <div
+                className={`text-center p-6 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all duration-500 transform hover:-translate-y-2 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: "500ms" }}
+              >
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-6 w-6 text-amber-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Durable Design
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Built to last with superior craftsmanship and attention to detail
+                </p>
+              </div>
+
+              {/* Feature 3 */}
+              <div
+                className={`text-center p-6 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all duration-500 transform hover:-translate-y-2 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: "600ms" }}
+              >
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="h-6 w-6 text-amber-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Passionate Craftsmanship
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Each piece reflects our love for equestrian excellence
+                </p>
+              </div>
+
+              {/* Feature 4 */}
+              <div
+                className={`text-center p-6 rounded-xl bg-gray-50 hover:bg-amber-50 transition-all duration-500 transform hover:-translate-y-2 ${
+                  isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                }`}
+                style={{ transitionDelay: "700ms" }}
+              >
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-amber-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  Customer Focused
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Dedicated to meeting the unique needs of every rider
+                </p>
+              </div>
             </div>
           </div>
         </div>
