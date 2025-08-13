@@ -1,13 +1,36 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Shield, Clock, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export default function Warranty() {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    setShowModal(true);
+  }, []);
+
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-12">
+    <>
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-xl shadow-lg p-8 max-w-md w-full relative">
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-700 text-2xl font-bold"
+              onClick={() => setShowModal(false)}
+              aria-label="Close Modal"
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold mb-3 text-gray-900">Important Notice</h2>
+            <p className="text-gray-700 mb-2">Welcome to our Warranty page!</p>
+            <p className="text-gray-600">Review the policy details below. Contact us if you have any questions about coverage or claims.</p>
+          </div>
+        </div>
+      )}
+      <div className="min-h-screen bg-gray-50 py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Header */}
+          <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Warranty Policy</h1>
           <div className="w-20 h-1 bg-amber-600 rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-gray-600">
