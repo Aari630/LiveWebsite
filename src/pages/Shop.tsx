@@ -17,6 +17,9 @@ export default function ShopPage() {
   const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('All Saddles');
 
+  console.log('shopProducts is:', shopProducts);
+  console.log('Type:', Array.isArray(shopProducts));
+
   const filteredProducts = selectedCategory === 'All Saddles'
     ? shopProducts
     : shopProducts.filter(product => product.category === selectedCategory);
