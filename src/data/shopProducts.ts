@@ -383,8 +383,8 @@ export const shopProducts: Product[] = [
   {
     id: 41,
     name: "Black English Dressage Style Combination Genuine Real Leather Full Cow Indium Softie English Saddle Horses with Free Complete Bridle and Stirrups Leathers",
-    image: "en1.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81iojpqe0vL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+    description: `Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH HORSE SADDLE This English Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE FREE TO ASK ANY QUESTIONS.`,
     category: "English Saddles",
     amazonLink:
       "https://www.amazon.com/Dressage-Combination-Saddle-Complete-Stirrups/dp/B0DNZ25WX6?ref_=ast_sto_dp&th=1&psc=1"
@@ -392,8 +392,8 @@ export const shopProducts: Product[] = [
   {
     id: 42,
     name: "Icelandic Black Cow Indium Softie Genuine Real Leather Hand Made Saddle English Horse Easy Comfortable Quilted Seat Saddle with Free Set",
-    image: "en2.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/61CgRCpmIwL._AC_SX679_.jpg",
+    description: `Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH ICELANDIC HORSE SADDLE This English Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18"`,
     category: "English Saddles",
     amazonLink:
       "https://www.amazon.com/Icelandic-Genuine-Leather-Saddle-Comfortable/dp/B0DNXYHMWV?ref_=ast_sto_dp&th=1&psc=1"
@@ -402,8 +402,8 @@ export const shopProducts: Product[] = [
   {
     id: 43,
     name: "English Dressage Style Blue Genuine High Qaulity Leather Full Covered Cow Indium Softie English Horse Saddle Saddle Hand Made Horse Easy Comfortable Plain Cow Black Softie Seat",
-    image: "en3.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81FdGVysxgL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH DRESSGE HORSE SADDLE This English Dressage Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day transparent`,
     category: "English Saddles",
     amazonLink:
       "https://www.amazon.com/English-Dressage-Genuine-Saddle-Comfortable/dp/B0DP7TPCCF?ref_=ast_sto_dp&th=1&psc=1"
@@ -411,8 +411,8 @@ export const shopProducts: Product[] = [
   {
     id: 44,
     name: "English Dressage Style Tan Genuine High Qaulity Leather Full Covered Cow Indium Softie English Horse Saddle Saddle Hand Made Horse Easy Comfortable Plain Cow Black Softie Seat",
-    image: "en4.jpg",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71OEr1A6yFL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH DRESSGE HORSE SADDLE This English Leather Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. Thank you have a nice day`,
     category: "English Saddles",
     amazonLink:
       "https://www.amazon.com/English-Dressage-Genuine-Saddle-Comfortable/dp/B0DP7TNVQW?ref_=ast_sto_dp&th=1&psc=1"
@@ -422,8 +422,8 @@ export const shopProducts: Product[] = [
   {
     id: 45,
     name: "Brazilian Genuine Real Leather English Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle 17 Inches",
-    image: "b1.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81VIKIlyPuL._AC_SX679_.jpg",
+    description: `THIS GENUINE LEATHER ENGLISH BRAZILIAN HORSE SADDLE This English Brazilian Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. If you have any query, please contact us before buying Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is smoke free, moisture free and pet free environment.`,
     category: "Brazilian Saddles",
     amazonLink:
       "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNKKKPJ8?ref_=ast_sto_dp&th=1&psc=1"
@@ -431,8 +431,8 @@ export const shopProducts: Product[] = [
   {
     id: 46,
     name: "Brazilian Genuine Real Leather English Hand Made Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle 17 Inches",
-    image: "b2.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/81MHf4Er4HL._AC_SX679_.jpg",
+    description: `New Top Brand and Quality products at Rock bottom prices. THIS GENUINE LEATHER ENGLISH BRAZILIAN HORSE SADDLE This English Brazilian Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18"`,
     category: "Brazilian Saddles",
     amazonLink:
       "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNSZ87H2?ref_=ast_sto_dp&th=1&psc=1"
@@ -440,8 +440,8 @@ export const shopProducts: Product[] = [
   {
     id: 47,
     name: "Brazilian Genuine Real Leather Hand Made Saddle Cow Indium Softie Hand Tooled English Horse Easy Comfortable Quilted Seat Saddle 17 Inches",
-    image: "b3.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/71HBHniC9RL._AC_SX679_.jpg",
+    description: `THIS GENUINE LEATHER ENGLISH BRAZILIAN HORSE SADDLE This English Brazilian Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS.`,
     category: "Brazilian Saddles",
     amazonLink:
       "https://www.amazon.com/Brazilian-Genuine-Leather-Saddle-Comfortable/dp/B0DNZ2B6R3?ref_=ast_sto_dp&th=1&psc=1"
@@ -449,8 +449,8 @@ export const shopProducts: Product[] = [
   {
     id: 48,
     name: "Blue Seat Brazilian Genuine Real Leather English Saddle Horse Easy Comfortable Quilted Cow Indium White Softie Seat Saddle",
-    image: "b4.webp",
-    description: ``,
+    image: "https://m.media-amazon.com/images/I/41DIpPO2XuL._AC_.jpg",
+    description: `THIS GENUINE LEATHER ENGLISH BRAZILIAN HORSE SADDLE This English Brazilian Leather saddle features forward padded knee rolls as well as a nice, close contact seat And completely covered with cow leather. This saddle will work great for riders beginning to jump as the leather and knee rolls will help keep the rider's leg in place. The wool flock paneling and reinforced tree will ensure a comfortable ride for your horse as well, eliminating pressure points and providing freedom of shoulder movement whether you are on the flat or over fences. AVAILABLE SEAT SIZE:-14",14.5",15",15.5", 16",16.5",17",17.5",18" YOU ARE OUR VALUED CUSTOMER AND WILL WE BE AT YOUR ASSISTANCE 24/7 YOU ARE FREE TO ASK ANY QUESTIONS. If you have any query, please contact us before buying Digital picture displayed here are most accurate in color i can't be held responsible for the difference in the individual monitor settings. All items are stored is smoke free, moisture free and pet free environment.`,
     category: "Brazilian Saddles",
     amazonLink:
       "https://www.amazon.com/Saddle-Fusion-Brazilian-Genuine-Comfortable/dp/B0DRGYY5W2?ref_=ast_sto_dp&th=1&psc=1"
