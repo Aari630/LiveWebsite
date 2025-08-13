@@ -111,49 +111,48 @@ export default function Products() {
             >
               {/* Product Image */}
               <Link to={`/product/${product.id}`} className="block">
-                <Link to={`/product/${product.id}`} className="block">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-64 object-contain p-4 bg-white group-hover:scale-105 transition-transform duration-700 cursor-pointer"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-64 object-contain p-4 bg-white group-hover:scale-105 transition-transform duration-700 cursor-pointer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                    {/* Featured Badge */}
-                    {product.featured && (
-                      <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        Featured
-                      </div>
-                    )}
-
-                    {/* Rating */}
-                    <div className="absolute top-4 right-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
-                      {[...Array(product.rating)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="h-3 w-3 fill-amber-400 text-amber-400"
-                        />
-                      ))}
+                  {/* Featured Badge */}
+                  {product.featured && (
+                    <div className="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      Featured
                     </div>
+                  )}
 
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  {/* Rating */}
+                  <div className="absolute top-4 right-4 flex items-center space-x-1 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full">
+                    {[...Array(product.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3 w-3 fill-amber-400 text-amber-400"
+                      />
+                    ))}
                   </div>
-                </Link>
 
-                {/* Product Info */}
-                <div className="p-6">
-                  <Link to={`/product/${product.id}`}>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors duration-300 cursor-pointer">
-                      {product.name}
-                    </h3>
-                  </Link>
-                  <p className="text-gray-600 mb-4 line-clamp-2">
-                    {product.description}
-                  </p>
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
+              </Link>
+
+              {/* Product Info */}
+              <div className="p-6">
+                <Link to={`/product/${product.id}`}>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors duration-300 cursor-pointer">
+                    {product.name}
+                  </h3>
+                </Link>
+                <p className="text-gray-600 mb-4 line-clamp-2">
+                  {product.description}
+                </p>
               </div>
+            </div>
           ))}
         </div>
 
