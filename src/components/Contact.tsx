@@ -24,12 +24,9 @@ export default function Contact() {
     return () => observer.disconnect();
   }, []);
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
@@ -42,9 +39,7 @@ export default function Contact() {
 
           {/* Image/Side */}
           <div
-            className={`relative transition-all duration-1000 transform ${
-              isVisible ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"
-            }`}
+            className={`relative transition-all duration-1000 transform ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"}`}
           >
             <div className="relative">
               <img
@@ -53,33 +48,18 @@ export default function Contact() {
                 className="w-full h-96 lg:h-[500px] object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
-
               {/* Overlay Card */}
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-xl shadow-xl max-w-xs text-left flex flex-col gap-3">
-                <div className="flex items-center text-amber-600 font-bold text-lg">
-                  <Mail className="mr-2 h-5 w-5" />
-                  <a href="mailto:Asifinternational225@gmail.com" className="hover:underline">
-                    Asifinternational225@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center text-amber-600 font-bold text-lg">
-                  <Phone className="mr-2 h-5 w-5" />
-                  <a href="tel:+917880722916" className="hover:underline">
-                    +91 7880722916
-                  </a>
-                </div>
-                <div className="flex items-center text-gray-600 font-semibold text-base">
-                  <MapPin className="mr-2 h-5 w-5" /> 12/4, Juhi Safed Colony, Kanpur – 208014
-                </div>
+                <div className="flex items-center text-amber-600 font-bold text-lg"><Mail className="mr-2 h-5 w-5" /> Asifinternational225@gmail.com</div>
+                <div className="flex items-center text-amber-600 font-bold text-lg"><Phone className="mr-2 h-5 w-5" /> +91 7880722916</div>
+                <div className="flex items-center text-gray-600 font-semibold text-base"><MapPin className="mr-2 h-5 w-5" /> 12/4, Juhi Safed Colony,Kanpur – 208014</div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div
-            className={`space-y-8 transition-all duration-1000 delay-300 transform ${
-              isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"
-            }`}
+            className={`space-y-8 transition-all duration-1000 delay-300 transform ${isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"}`}
           >
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Contact Us</h2>
@@ -140,7 +120,6 @@ export default function Contact() {
               )}
             </div>
           </div>
-
         </div>
       </div>
     </section>
