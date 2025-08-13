@@ -112,7 +112,7 @@ export default function ImageGallery({
     <div ref={galleryRef} className={`${className}`}>
       {/* Gallery Grid */}
       <div className={`grid ${getGridCols()} gap-6`}>
-        {images.map((image, index) => (
+        {(images || []).map((image, index) => (
           <div
             key={image.id}
             ref={(el) => (imageRefs.current[index] = el)}
